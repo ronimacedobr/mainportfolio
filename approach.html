@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Will Jacks">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Will Jacks</title>
+    <!-- CSS -->
+    <!-- Loco -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="counter" id="counter">0%</div>
+        <div class="bar">
+            <div class="bar2"></div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main" data-textcolor="#181818" data-bgcolor="#f5f5f5">
+        <!-- Navbar -->
+        <nav>
+            <div class="wrapper">
+                <h1>
+                    <a class="brand-link" href="index.html">Will Jacks</a>
+                </h1>
+                <div class="links">
+                    <a href="index.html" class="underLineLink">Index</a>
+                    <a href="approach.html" class="underLineLink">Approach</a>
+                </div>
+            </div>
+
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <h3 class="font16">Based in <br> London, UK</h3>
+        </nav>
+
+        <!-- Header -->
+        <section class="approachHeader">
+            <h2 class="fontMedium">
+                Maximizing client satisfaction hinges on mastering the art of seamless collaboration.
+            </h2>
+        </section>
+
+        <!-- Details -->
+        <section class="approachDetails">
+            <div class="col">
+                <div>
+                    <p class="font16">Services</p>
+                    <p class="font16">Web Design</p>
+                    <p class="font16">Motion Design</p>
+                    <p class="font16">Web Development</p>
+                    <p class="font16">No Code Development</p>
+                </div>
+                <div>
+                    <p class="font16">
+                        To create a website that not only meets but also exceeds client expectations, I adopt a detailed
+                        and careful approach that starts with thorough discussions with the client. This initial step
+                        allows me to fully grasp their vision, objectives, and the audience they aim to reach, setting a
+                        strong groundwork. Maintaining open and collaborative communication with clients throughout this
+                        process is crucial, as it ensures the end result not only fulfills their requirements but also
+                        exceeds them, resulting in a website that engages and enchants their target audience.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <p class="font16">Disciplines</p>
+                    <p class="font16">Creative Developer</p>
+                    <p class="font16">Modern Designer</p>
+                </div>
+                <div>
+                    <p class="font16">
+                        As a Creative Developer and Modern Designer, I fuse innovation with artistry to create
+                        compelling digital experiences. My work transcends mere code and design; it's about crafting
+                        interactive moments that inspire and engage. I blend aesthetics with functionality, ensuring
+                        every element serves a purpose. Through this holistic approach, I push digital boundaries,
+                        delivering forward-thinking solutions that redefine standards in the digital landscape.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="about">
+            <!-- Same classes from index.html about => tools section just content change -->
+            <div class="tools" data-textcolor="#e9e9e9" data-bgcolor="#181818">
+                <div class="tools_heading">
+                    <p class="font16">Process</p>
+                </div>
+                <div class="tools_wrapper">
+                    <div>
+                        <h2 class="fontMedium">Art Direction</h2>
+                        <p class="font16">
+                            In the initial stage of art direction, I craft the project's visual and narrative identity.
+                            By conducting thorough research, engaging in collaboration and consultation with clients, I
+                            capture the project's core, defining its atmosphere, emotional impact, and overall visual
+                            style. This phase lays the groundwork, creating a distinct vision that steers the following
+                            design endeavors.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="fontMedium">Design</h2>
+                        <p class="font16">
+                            In the early phase of the design process, I develop the project's aesthetic and conceptual
+                            foundation. Through in-depth research and active engagement with clients, I pinpoint the
+                            essence of the project, shaping its visual language, emotional resonance, and design
+                            principles. This step forms the cornerstone, crafting a unique direction that influences all
+                            subsequent design activities.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="fontMedium">Development</h2>
+                        <p class="font16">
+                            In the initial stage of development, I establish the project's functional and conceptual
+                            framework. By conducting thorough research, engaging in collaboration and consultation with
+                            clients, I pinpoint the project's fundamental requirements, defining its goals, user
+                            experience objectives, and technical specifications. This phase sets the foundation,
+                            building a clear strategy that guides the subsequent development process.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="fontMedium">No - Code</h2>
+                        <p class="font16">
+                            In the initial phase of no-code development, I define the project's functional blueprint and
+                            user interaction strategy. By undertaking comprehensive research, fostering collaboration,
+                            and consulting with clients, I distill the project's primary objectives, outlining its user
+                            journey, interface design, and interaction flow. This stage establishes a solid foundation,
+                            formulating a clear blueprint that directs the forthcoming no-code development activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Footer Details -->
+            <div id="footer_details" data-textcolor="#181818" data-bgcolor="#f5f5f5">
+                <!-- Heading -->
+                <div class="footer_heading">
+                    <div class="reveal">
+                        <h1 class="fontLarge">Reach</h1>
+                    </div>
+                    <div class="reveal">
+                        <h1 class="fontLarge">Out</h1>
+                    </div>
+                </div>
+                <!-- footer inner -->
+                <div class="footer_inner">
+                    <p class="font16">Currently availbale <br> for freelance projects</p>
+                    <div class="footer_col">
+                        <p class="font16">Based in <br> London, UK</p>
+                        <h3 class="fontSmall">
+                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me!
+
+                            <a href="gmail.com" class="underLineLink">hello@willjacks.com</a>
+                        </h3>
+                    </div>
+                    <div class="footer_col2">
+                        <p class="font16">© All rights reserved.</p>
+                        <div class="footer_inner_links">
+                            <a href="https://www.behance.net" class="underLineLink">Behance</a>
+                            <a href="https://dribbble.com" class="underLineLink">Dribble</a>
+                            <a href="https://contra.com" class="underLineLink">Contra</a>
+                            <a href="https://www.pinterest.com" class="underLineLink">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EyeBall Social container -->
+            <div class="Footer_Social" data-textcolor="#e9e9e9" data-bgcolor="#181818">
+                <div class="footer_wrapper">
+                    <!-- eye -->
+                    <svg id="svg" viewBox="0 0 1000 1000">
+                        <g id="left-eye">
+                            <circle class="eye-outer" cx="400" cy="500" r="100" stroke="#181818" stroke-width="2"
+                                fill="#e9e9e9" />
+                            <circle class="eye-inner" cx="480" cy="500" r="20" fill="#181818" />
+                        </g>
+                        <g id="right-eye">
+                            <circle class="eye-outer" cx="600" cy="500" r="100" stroke="#181818" stroke-width="2"
+                                fill="#e9e9e9" />
+                            <circle class="eye-inner" cx="680" cy="500" r="20" fill="#181818" />
+                        </g>
+                    </svg>
+                    <!-- Links -->
+                    <div class="footer_container" data-scroll data-scroll-speed="-2">
+                        <div>
+                            <a href="https://www.instagram.com" class="footer_text">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com" class="footer_text">Facebook</a>
+                            <a href="https://twitter.com" class="footer_text">Twitter</a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com" class="footer_text">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Locomotive -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Custom -->
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
