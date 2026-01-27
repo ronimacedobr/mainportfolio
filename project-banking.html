@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="project-page">
+<body class="project-page" data-project-id="banking">
     <!-- Loader -->
     <div class="loader-container">
         <div class="counter" id="counter">0%</div>
@@ -58,14 +58,15 @@
                     <div class="projectHeroPhone">
                         <div class="projectHeroScreen">
                             <img src="assets/dashboard.png" alt="Banking dashboard screen" width="auto" height="auto"
-                                loading="lazy">
+                                loading="lazy" data-project-src="hero.images.0.src" data-project-alt="hero.images.0.alt">
                         </div>
                     </div>
                 </div>
                 <div class="projectHeroDevice is-center">
                     <div class="projectHeroPhone">
                         <div class="projectHeroScreen">
-                            <img src="assets/flow.png" alt="Banking flow screen" width="auto" height="auto" loading="lazy">
+                            <img src="assets/flow.png" alt="Banking flow screen" width="auto" height="auto" loading="lazy"
+                                data-project-src="hero.images.1.src" data-project-alt="hero.images.1.alt">
                         </div>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                     <div class="projectHeroPhone">
                         <div class="projectHeroScreen">
                             <img src="assets/accounts.png" alt="Banking accounts screen" width="auto" height="auto"
-                                loading="lazy">
+                                loading="lazy" data-project-src="hero.images.2.src" data-project-alt="hero.images.2.alt">
                         </div>
                     </div>
                 </div>
@@ -85,26 +86,26 @@
             <div class="projectTitle">
                 <div class="projectHeader_inner">
                     <div class="reveal">
-                        <h1 class="fontLarge">Banking</h2>
+                        <h1 class="fontLarge" data-project-text="title">Banking</h1>
                     </div>
                 </div>
             </div>
 
             <div class="projectIntro">
-                <p class="font16 projectLabel">Introduction</p>
-                <p class="font16 projectIntroText">
+                <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
+                <p class="font16 projectIntroText" data-project-text="intro.text">
                     Product Designer · iOS Developer. A native iOS application designed to help freelancers and creatives
                     manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular
                     income and complex financial tracking, yet most finance apps are designed for traditional employees.
                     Existing solutions felt generic, overwhelming, and stressful to use.
                 </p>
                 <div class="projectBlock">
-                    <p class="font16 projectLabel">Role</p>
-                    <p class="font16">Product Designer · iOS Developer</p>
+                    <p class="font16 projectLabel" data-project-text="role.label">Role</p>
+                    <p class="font16" data-project-text="role.text">Product Designer · iOS Developer</p>
                 </div>
                 <div class="projectBlock">
-                    <p class="font16 projectLabel">Users &amp; Needs</p>
-                    <p class="font16">
+                    <p class="font16 projectLabel" data-project-text="usersNeeds.label">Users &amp; Needs</p>
+                    <p class="font16" data-project-text="usersNeeds.text">
                         This product was designed for freelancers and creatives with variable monthly income who need a
                         clear and reliable way to understand their financial situation. The focus was on fast income
                         tracking, an immediate overview of financial health, and a setup that minimizes effort and
@@ -113,18 +114,18 @@
                 </div>
 
                 <div class="projectBlock">
-                    <p class="font16 projectLabel">Process</p>
-                    <p class="font16">
+                    <p class="font16 projectLabel" data-project-text="process.label">Process</p>
+                    <p class="font16" data-project-text="process.steps.0">
                         The project began with research and discovery through interviews with freelancers and independent
                         workers, combined with an analysis of existing personal finance apps to identify usability gaps
                         and common pain points.
                     </p>
-                    <p class="font16">
+                    <p class="font16" data-project-text="process.steps.1">
                         Based on these insights, wireframes were created with a strong focus on speed and simplicity. The
                         interface was then developed into high-fidelity designs in Figma, aligned with Apple’s Human
                         Interface Guidelines, and iterated continuously to remove unnecessary steps.
                     </p>
-                    <p class="font16">
+                    <p class="font16" data-project-text="process.steps.2">
                         The application was built using Swift and SwiftUI, with Firebase integrated for authentication and
                         data storage. Core user flows were tested directly on real devices throughout development to
                         ensure reliability and performance.
@@ -137,7 +138,8 @@
                     <div class="projectHeroPhone">
                         <div class="projectHeroScreen">
                             <video autoplay loop muted playsinline preload="auto">
-                                <source src="assets/demovideo.mp4" type="video/mp4">
+                                <source src="assets/demovideo.mp4" type="video/mp4"
+                                    data-project-src="demoVideo.src" data-project-type="demoVideo.type">
                             </video>
                         </div>
                     </div>
@@ -146,17 +148,30 @@
 
             <div class="projectContent">
                 <div class="projectBlock">
-                    <p class="font16 projectLabel">Design Decisions &amp; Outcome</p>
-                    <p class="font16">
+                    <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome
+                    </p>
+                    <p class="font16" data-project-text="designDecisions.steps.0">
                         A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual
                         summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve,
                         and user flows were designed to require as little manual input as possible.
                     </p>
-                    <p class="font16">
+                    <p class="font16" data-project-text="designDecisions.steps.1">
                         The result was a polished and functional iOS application. Early feedback highlighted its clarity,
                         ease of use, and the value of simplicity when working with personal finance tools.
                     </p>
                 </div>
+            </div>
+
+            <div class="projectNav">
+                <a class="projectNav_link" href="project-eclat.html" data-project-href="nav.previous.href">
+                    <span class="font16 projectNav_label" data-project-text="nav.previous.label">Previous project</span>
+                    <span class="fontMedium projectNav_title" data-project-text="nav.previous.title">Éclat</span>
+                </a>
+                <a class="projectNav_link is-right" href="project-cote-sauvage.html"
+                    data-project-href="nav.next.href">
+                    <span class="font16 projectNav_label" data-project-text="nav.next.label">Next project</span>
+                    <span class="fontMedium projectNav_title" data-project-text="nav.next.title">Côte Sauvage</span>
+                </a>
             </div>
         </section>
 
@@ -237,6 +252,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- Custom -->
+    <script src="js/project-loader.js"></script>
     <script src="js/main.js" type="module"></script>
 </body>
 

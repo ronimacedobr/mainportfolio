@@ -1,0 +1,382 @@
+{
+  "projects": [
+    {
+      "id": "Finance",
+      "title": "Finance",
+      "intro": {
+        "label": "Introduction",
+        "text": "Product Designer · iOS Developer. A native iOS application designed to help freelancers and creatives manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular income and complex financial tracking, yet most finance apps are designed for traditional employees. Existing solutions felt generic, overwhelming, and stressful to use."
+      },
+      "role": {
+        "label": "Role",
+        "text": "Product Designer · iOS Developer"
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "text": "This product was designed for freelancers and creatives with variable monthly income who need a clear and reliable way to understand their financial situation. The focus was on fast income tracking, an immediate overview of financial health, and a setup that minimizes effort and cognitive load."
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "The project began with research and discovery through interviews with freelancers and independent workers, combined with an analysis of existing personal finance apps to identify usability gaps and common pain points.",
+          "Based on these insights, wireframes were created with a strong focus on speed and simplicity. The interface was then developed into high-fidelity designs in Figma, aligned with Apple’s Human Interface Guidelines, and iterated continuously to remove unnecessary steps.",
+          "The application was built using Swift and SwiftUI, with Firebase integrated for authentication and data storage. Core user flows were tested directly on real devices throughout development to ensure reliability and performance."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve, and user flows were designed to require as little manual input as possible.",
+          "The result was a polished and functional iOS application. Early feedback highlighted its clarity, ease of use, and the value of simplicity when working with personal finance tools."
+        ]
+      },
+      "hero": {
+        "images": [
+          {
+            "src": "assets/dashboard.png",
+            "alt": "Banking dashboard screen"
+          },
+          {
+            "src": "assets/flow.png",
+            "alt": "Banking flow screen"
+          },
+          {
+            "src": "assets/accounts.png",
+            "alt": "Banking accounts screen"
+          }
+        ]
+      },
+      "demoVideo": {
+        "src": "assets/demovideo.mp4",
+        "type": "video/mp4"
+      },
+      "nav": {
+        "previous": {
+          "label": "Previous project",
+          "title": "Côte Sauvage",
+          "href": "project-cote-sauvage.html"
+        },
+        "next": {
+          "label": "Next project",
+          "title": "E-commerce",
+          "href": "project-ecommerce.html"
+        }
+      }
+    },
+    {
+      "id": "ecommerce",
+      "title": "E-commerce",
+      "intro": {
+        "label": "Introduction",
+        "text": "Project details coming soon."
+      },
+      "role": {
+        "label": "Role",
+        "text": "Coming soon."
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "text": "Details coming soon."
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "hero": {
+        "images": [
+          {
+            "src": "assets/dashboard.png",
+            "alt": "E-commerce screen"
+          },
+          {
+            "src": "assets/flow.png",
+            "alt": "E-commerce screen"
+          },
+          {
+            "src": "assets/accounts.png",
+            "alt": "E-commerce screen"
+          }
+        ]
+      },
+      "demoVideo": {
+        "src": "assets/demovideo.mp4",
+        "type": "video/mp4"
+      },
+      "nav": {
+        "previous": {
+          "label": "Previous project",
+          "title": "Banking",
+          "href": "project-banking.html"
+        },
+        "next": {
+          "label": "Next project",
+          "title": "Legal Tech",
+          "href": "project-legal-tech.html"
+        }
+      }
+    },
+    {
+      "id": "legal-tech",
+      "title": "Legal Tech",
+      "intro": {
+        "label": "Introduction",
+        "text": "Project details coming soon."
+      },
+      "role": {
+        "label": "Role",
+        "text": "Coming soon."
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "text": "Details coming soon."
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "hero": {
+        "images": [
+          {
+            "src": "assets/dashboard.png",
+            "alt": "Legal Tech screen"
+          },
+          {
+            "src": "assets/flow.png",
+            "alt": "Legal Tech screen"
+          },
+          {
+            "src": "assets/accounts.png",
+            "alt": "Legal Tech screen"
+          }
+        ]
+      },
+      "demoVideo": {
+        "src": "assets/demovideo.mp4",
+        "type": "video/mp4"
+      },
+      "nav": {
+        "previous": {
+          "label": "Previous project",
+          "title": "E-commerce",
+          "href": "project-ecommerce.html"
+        },
+        "next": {
+          "label": "Next project",
+          "title": "Wine & Donuts",
+          "href": "project-wine-donuts.html"
+        }
+      }
+    },
+    {
+      "id": "wine-donuts",
+      "title": "Wine & Donuts",
+      "intro": {
+        "label": "Introduction",
+        "text": "Project details coming soon."
+      },
+      "role": {
+        "label": "Role",
+        "text": "Coming soon."
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "text": "Details coming soon."
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "hero": {
+        "images": [
+          {
+            "src": "assets/dashboard.png",
+            "alt": "Wine & Donuts screen"
+          },
+          {
+            "src": "assets/flow.png",
+            "alt": "Wine & Donuts screen"
+          },
+          {
+            "src": "assets/accounts.png",
+            "alt": "Wine & Donuts screen"
+          }
+        ]
+      },
+      "demoVideo": {
+        "src": "assets/demovideo.mp4",
+        "type": "video/mp4"
+      },
+      "nav": {
+        "previous": {
+          "label": "Previous project",
+          "title": "Legal Tech",
+          "href": "project-legal-tech.html"
+        },
+        "next": {
+          "label": "Next project",
+          "title": "Éclat",
+          "href": "project-eclat.html"
+        }
+      }
+    },
+    {
+      "id": "eclat",
+      "title": "Éclat",
+      "intro": {
+        "label": "Introduction",
+        "text": "Project details coming soon."
+      },
+      "role": {
+        "label": "Role",
+        "text": "Coming soon."
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "text": "Details coming soon."
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "hero": {
+        "images": [
+          {
+            "src": "assets/dashboard.png",
+            "alt": "Éclat screen"
+          },
+          {
+            "src": "assets/flow.png",
+            "alt": "Éclat screen"
+          },
+          {
+            "src": "assets/accounts.png",
+            "alt": "Éclat screen"
+          }
+        ]
+      },
+      "demoVideo": {
+        "src": "assets/demovideo.mp4",
+        "type": "video/mp4"
+      },
+      "nav": {
+        "previous": {
+          "label": "Previous project",
+          "title": "Wine & Donuts",
+          "href": "project-wine-donuts.html"
+        },
+        "next": {
+          "label": "Next project",
+          "title": "Côte Sauvage",
+          "href": "project-cote-sauvage.html"
+        }
+      }
+    },
+    {
+      "id": "cote-sauvage",
+      "title": "Côte Sauvage",
+      "intro": {
+        "label": "Introduction",
+        "text": "Project details coming soon."
+      },
+      "role": {
+        "label": "Role",
+        "text": "Coming soon."
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "text": "Details coming soon."
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "Project details coming soon.",
+          "Project details coming soon."
+        ]
+      },
+      "hero": {
+        "images": [
+          {
+            "src": "assets/dashboard.png",
+            "alt": "Côte Sauvage screen"
+          },
+          {
+            "src": "assets/flow.png",
+            "alt": "Côte Sauvage screen"
+          },
+          {
+            "src": "assets/accounts.png",
+            "alt": "Côte Sauvage screen"
+          }
+        ]
+      },
+      "demoVideo": {
+        "src": "assets/demovideo.mp4",
+        "type": "video/mp4"
+      },
+      "nav": {
+        "previous": {
+          "label": "Previous project",
+          "title": "Éclat",
+          "href": "project-eclat.html"
+        },
+        "next": {
+          "label": "Next project",
+          "title": "Banking",
+          "href": "project-banking.html"
+        }
+      }
+    }
+  ]
+}

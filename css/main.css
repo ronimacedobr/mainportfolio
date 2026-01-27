@@ -197,6 +197,9 @@ footer #footer_details .footer_inner .footer_col h3 {
 footer #footer_details .footer_inner .footer_col h3 a {
   margin-top: 5vw;
 }
+footer #footer_details a {
+  color: inherit;
+}
 footer #footer_details .footer_inner .footer_col2 {
   display: flex;
   gap: 6vw;
@@ -378,7 +381,7 @@ footer .Footer_Social .footer_wrapper .footer_container > div .footer_text:hover
 }
 .underLineLink::before {
   content: "";
-  background: #181818;
+  background: currentColor;
   width: 0%;
   height: 1px;
   position: absolute;
@@ -855,6 +858,36 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+.projectNav {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 4vw;
+  margin-top: 4vw;
+  border-top: 1px solid rgba(24, 24, 24, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 6vw;
+}
+.projectNav_link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: inherit;
+}
+.projectNav_link.is-right {
+  text-align: right;
+  align-items: flex-end;
+}
+.projectNav_label {
+  opacity: 0.6;
+}
+.projectNav_title {
+  font-size: 30px;
+  letter-spacing: -0.4px;
+  line-height: 1.1;
+  color: #6f6f6f;
+}
 .projectImageRow {
   width: 100%;
   display: flex;
@@ -1048,6 +1081,16 @@ footer {
   .projectContent {
     max-width: 100%;
     padding: 0 15px;
+  }
+  .projectNav {
+    max-width: 100%;
+    padding: 0 15px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .projectNav_link.is-right {
+    text-align: left;
+    align-items: flex-start;
   }
   .projectImageRow {
     flex-direction: column;

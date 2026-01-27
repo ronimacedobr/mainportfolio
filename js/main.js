@@ -85,48 +85,102 @@ function setupAnimations() {
         });
     });
 
-    let counter = { value: 0 };
+    const cameFromProject = isProjectPage && /project-/.test(document.referrer || "");
+    const shouldShowLoader = !cameFromProject;
 
-    /* loader */
-    gsap.to(counter, {
-        duration: 2,
-        value: 100,
-        ease: "none",
-        onUpdate: function () {
+    if (shouldShowLoader) {
+        let counter = { value: 0 };
 
-            const currentPercentage = Math.ceil(counter.value);
-            document.getElementById("counter").textContent = currentPercentage + '%';
+        /* loader */
+        gsap.to(counter, {
+            duration: 2,
+            value: 100,
+            ease: "none",
+            onUpdate: function () {
 
-            gsap.to(".bar2", {
-                width: currentPercentage + "%",
-                ease: "none",
-                duration: 0.1
-            });
-        },
-        onComplete: () => {
-            var tl4 = gsap.timeline();
-            tl4.to(".counter", {
-                ease: "power4.inOut",
-                opacity: 0,
-                duration: 0.5,
-            });
+                const currentPercentage = Math.ceil(counter.value);
+                document.getElementById("counter").textContent = currentPercentage + '%';
 
-            tl4.to(".bar", {
-                ease: "power4.inOut",
-                opacity: 0,
-                duration: 0.5,
-            }, '-=.3');
+                gsap.to(".bar2", {
+                    width: currentPercentage + "%",
+                    ease: "none",
+                    duration: 0.1
+                });
+            },
+            onComplete: () => {
+                var tl4 = gsap.timeline();
+                tl4.to(".counter", {
+                    ease: "power4.inOut",
+                    opacity: 0,
+                    duration: 0.5,
+                });
 
-            tl4.to(".loader-container", {
-                y: "-120%",
-                ease: "power4.inOut",
-                duration: 1.6,
-            });
-        }
-    });
+                tl4.to(".bar", {
+                    ease: "power4.inOut",
+                    opacity: 0,
+                    duration: 0.5,
+                }, '-=.3');
 
+                tl4.to(".loader-container", {
+                    y: "-120%",
+                    ease: "power4.inOut",
+                    duration: 1.6,
+                });
+            }
+        });
+    } else {
+        gsap.set(".loader-container", { y: "-120%", opacity: 0, pointerEvents: "none" });
+    }
+
+    if (isProjectPage) {
+        setupProjectTransitions();
+    }
 
     ScrollTrigger.refresh();
+}
+
+function setupProjectTransitions() {
+    const transitionKey = "projectTransitionDirection";
+    const transitionDuration = 0.5;
+    const transitionEase = "power2.out";
+    const links = document.querySelectorAll(".projectNav_link");
+
+    const lastDirection = sessionStorage.getItem(transitionKey);
+    if (lastDirection === "next" || lastDirection === "prev") {
+        sessionStorage.removeItem(transitionKey);
+        const fromX = lastDirection === "next" ? 60 : -60;
+        gsap.set("#main", { x: fromX, opacity: 0 });
+        gsap.to("#main", {
+            x: 0,
+            opacity: 1,
+            duration: transitionDuration,
+            ease: transitionEase
+        });
+    }
+
+    links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const href = link.getAttribute("href");
+            if (!href) {
+                return;
+            }
+
+            const direction = link.classList.contains("is-right") ? "next" : "prev";
+            const toX = direction === "next" ? -60 : 60;
+            sessionStorage.setItem(transitionKey, direction);
+
+            gsap.to("#main", {
+                x: toX,
+                opacity: 0,
+                duration: transitionDuration,
+                ease: transitionEase,
+                onComplete: () => {
+                    window.location.href = href;
+                }
+            });
+        });
+    });
 }
 
 init();
