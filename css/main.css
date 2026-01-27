@@ -1017,41 +1017,6 @@ footer {
   }
 }
 
-@media (max-width: 560px) {
-  .projectHeader {
-    padding-bottom: 12vw;
-  }
-  .projectHero {
-    padding-top: 12vw;
-  }
-  :root {
-    --project-phone-width: 200px;
-    --project-phone-side-offset: 0px;
-  }
-  .project-page .projectHero .projectHeroDevices {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 20px 10px;
-  }
-  .projectHeroDevice,
-  .projectHeroDevice.is-center {
-    width: var(--project-phone-width);
-    max-width: var(--project-phone-width);
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-  }
-  .projectHeroDevice.is-side {
-    margin-top: var(--project-phone-side-offset);
-  }
-  .projectImageRow {
-    align-items: center;
-  }
-}
 .projectDetails .projectTitle,
 .projectDetails .projectImageRow {
   padding-left: 35px;
@@ -1061,10 +1026,17 @@ footer {
   align-items: center;
   text-align: center;
 }
+.projectDetails .projectTitle .reveal {
+  overflow: visible;
+}
+.projectDetails .projectTitle h1 {
+  line-height: 1.05;
+  padding-bottom: 0.04em;
+}
 
 @media (max-width: 768px) {
   .projectHeader {
-    padding-top: 18vw;
+    padding-top: 200px;
     padding-bottom: 6vw;
   }
   .projectDetails {
@@ -1075,19 +1047,72 @@ footer {
   .projectIntro,
   .projectContent {
     max-width: 100%;
+    padding: 0 15px;
   }
   .projectImageRow {
     flex-direction: column;
     gap: 6vw;
+    align-items: center;
   }
   .projectHero {
-    padding-top: 4vw;
-    padding-bottom: 8vw;
+    padding-top: 6vw;
+    padding-bottom: 10vw;
   }
   .projectDetails .projectTitle,
   .projectDetails .projectImageRow {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --project-phone-width: 220px;
+    --project-phone-side-offset: 0px;
+  }
+  .projectDetails .projectTitle .reveal {
+    overflow: visible;
+  }
+  .projectDetails .projectTitle h1 {
+    line-height: 1.05;
+    padding-bottom: 0.04em;
+  }
+  .projectHeroPhone {
+    box-shadow: none;
+  }
+  .project-page .projectHero .projectHeroDevices {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 calc(50% - 110px) 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .project-page .projectHero .projectHeroDevices::-webkit-scrollbar {
+    display: none;
+  }
+  .projectHeroDevice,
+  .projectHeroDevice.is-center {
+    width: var(--project-phone-width);
+    max-width: var(--project-phone-width);
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+  .projectHeroDevice.is-side {
+    margin-top: var(--project-phone-side-offset);
+    opacity: 1;
+  }
+  .projectImageRow {
+    align-items: center;
+    justify-content: center;
+  }
+  .projectImageRow .projectHeroDevice {
+    width: 220px;
+    max-width: 220px;
   }
 }
 
