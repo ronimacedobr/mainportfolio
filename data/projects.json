@@ -34,15 +34,15 @@
         "images": [
           {
             "src": "assets/dashboard.png",
-            "alt": "Banking dashboard screen"
+            "alt": "Finance dashboard screen"
           },
           {
             "src": "assets/flow.png",
-            "alt": "Banking flow screen"
+            "alt": "Finance flow screen"
           },
           {
             "src": "assets/accounts.png",
-            "alt": "Banking accounts screen"
+            "alt": "Finance accounts screen"
           }
         ]
       },
@@ -116,59 +116,51 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Banking",
+          "title": "Finance",
           "href": "project-banking.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Legal Tech",
+          "title": "Logistics",
           "href": "project-legal-tech.html"
         }
       }
     },
     {
       "id": "legal-tech",
-      "title": "Legal Tech",
+      "title": "Logistics",
       "intro": {
         "label": "Introduction",
-        "text": "Project details coming soon."
+        "text": "Product Designer · Web Designer. A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale. Logistics platforms often struggle to communicate complex services in a simple and trustworthy way. Many existing industry websites feel outdated, overly technical, or visually cluttered, making it difficult for potential clients to quickly understand offerings and value.\n\nThe goal of this project was to design a clean, structured, and confident digital presence that communicates reliability, global reach, and operational efficiency, while remaining approachable for new and existing customers."
       },
       "role": {
         "label": "Role",
-        "text": "Coming soon."
+        "text": "Product Designer · Web Designer"
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "Details coming soon."
+        "text": "This project was designed for logistics decision-makers, operations managers, and business clients seeking reliable freight and transportation services. Users needed a fast and intuitive way to understand service offerings, coverage, and capabilities without being overwhelmed by technical jargon.\n\nThe focus was on clear service categorization, strong visual hierarchy, and straightforward navigation, enabling users to quickly assess whether the company could meet their logistics needs and how to initiate contact or request a quote."
       },
       "process": {
         "label": "Process",
         "steps": [
-          "Project details coming soon.",
-          "Project details coming soon.",
-          "Project details coming soon."
+          "The project began with an analysis of logistics and freight industry websites to identify common usability and communication issues, including dense layouts, unclear messaging, and lack of visual trust signals.",
+          "Based on these insights, the information architecture was restructured to prioritize clarity and flow. Wireframes were created to define a clear hierarchy between services, company positioning, and calls to action. High-fidelity designs were then developed in Webflow, focusing on clean typography, restrained color usage, and strong visual balance to convey professionalism and scale.",
+          "Particular attention was given to responsive behavior, ensuring the site remained clear and readable across devices. The final result is a streamlined, modern logistics website that presents complex services in a clear, confident, and accessible way."
         ]
       },
       "designDecisions": {
         "label": "Design Decisions & Outcome",
         "steps": [
-          "Project details coming soon.",
-          "Project details coming soon."
+          "Based on these insights, the information architecture was restructured to prioritize clarity and flow. Wireframes were created to define a clear hierarchy between services, company positioning, and calls to action. High-fidelity designs were then developed in Webflow, focusing on clean typography, restrained color usage, and strong visual balance to convey professionalism and scale.",
+          "Particular attention was given to responsive behavior, ensuring the site remained clear and readable across devices. The final result is a streamlined, modern logistics website that presents complex services in a clear, confident, and accessible way."
         ]
       },
       "hero": {
         "images": [
           {
-            "src": "assets/dashboard.png",
-            "alt": "Legal Tech screen"
-          },
-          {
-            "src": "assets/flow.png",
-            "alt": "Legal Tech screen"
-          },
-          {
-            "src": "assets/accounts.png",
-            "alt": "Legal Tech screen"
+            "src": "assets/herologistics.jpg",
+            "alt": "Logistics hero"
           }
         ]
       },
@@ -242,7 +234,7 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Legal Tech",
+          "title": "Logistics",
           "href": "project-legal-tech.html"
         },
         "next": {
@@ -373,7 +365,7 @@
         },
         "next": {
           "label": "Next project",
-          "title": "Banking",
+          "title": "Finance",
           "href": "project-banking.html"
         }
       }

@@ -1005,6 +1005,64 @@ footer {
   display: block;
   object-fit: cover;
 }
+.project-page[data-project-id="legal-tech"] .projectHeroDevice {
+  width: min(1040px, 100%);
+  max-width: 100%;
+  flex: 1 1 100%;
+}
+.project-page[data-project-id="legal-tech"] .projectHeroPhone {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.project-page[data-project-id="legal-tech"] .projectHeroScreen {
+  background: transparent;
+  border-radius: 26px;
+}
+.project-page[data-project-id="legal-tech"] .projectHeroScreen img {
+  border-radius: 26px;
+}
+.project-page[data-project-id="legal-tech"] .projectHeroDevices {
+  gap: 0;
+}
+.project-page[data-project-id="legal-tech"] .projectHeroLaptop {
+  width: min(980px, 100%);
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+.project-page[data-project-id="legal-tech"] .projectImageRow .projectHeroLaptop {
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+.project-page[data-project-id="legal-tech"] .projectLaptopMock {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.project-page[data-project-id="legal-tech"] .projectLaptopMock img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-page[data-project-id="legal-tech"] .projectLaptopScreen {
+  position: absolute;
+  top: 8%;
+  left: 11.5%;
+  width: 77%;
+  height: 71%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000000;
+}
+.project-page[data-project-id="legal-tech"] .projectLaptopScreen iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
 
 @media (max-width: 1024px) {
   :root {
