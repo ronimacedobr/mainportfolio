@@ -58,7 +58,7 @@
         },
         "next": {
           "label": "Next project",
-          "title": "Saas",
+          "title": "E-commerce",
           "href": "project-ecommerce.html"
         }
       }
@@ -68,49 +68,41 @@
       "title": "E-comerce",
       "intro": {
         "label": "Introduction",
-        "text": "Project details coming soon."
+        "text": "Bites & Bikes is a premium React UI solution built for modern bike shops, e-commerce storefronts, and lifestyle brands. The project focuses on delivering a production-ready storefront with strong performance, clean structure, and scalable design patterns.\n\nMany existing e-commerce templates prioritize visuals over usability and code quality. This project was designed to bridge that gap by combining a refined UI with a maintainable, developer-friendly architecture suitable for real-world products."
       },
       "role": {
         "label": "Role",
-        "text": "Coming soon."
+        "text": "Product Designer · Frontend Developer"
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "Details coming soon."
+        "text": "The primary users include e-commerce businesses and product-driven teams, as well as developers, designers, and founders launching storefronts under tight timelines.\n\nKey needs addressed:\n- Fast setup without sacrificing design quality\n- Clear product hierarchy to support browsing and conversion\n- Responsive, mobile-first layouts\n- A modular codebase that supports customization and scaling\n\nThe goal was to reduce friction for both end users and the teams building on top of the template."
       },
       "process": {
         "label": "Process",
         "steps": [
-          "Project details coming soon.",
-          "Project details coming soon.",
-          "Project details coming soon."
+          "The project began with a review of existing React-based storefronts and e-commerce themes to identify usability and technical gaps, particularly around layout consistency, performance, and maintainability.",
+          "Based on these findings, a flexible layout system and reusable component structure were defined. Design decisions focused on clarity, predictable navigation, and a visual system that could adapt to different brand identities.",
+          "The UI was implemented using React and Tailwind CSS, with emphasis on clean component boundaries, reusable patterns, and performance-oriented rendering. Continuous testing ensured consistent behavior across devices and screen sizes."
         ]
       },
       "designDecisions": {
         "label": "Design Decisions & Outcome",
         "steps": [
-          "Project details coming soon.",
-          "Project details coming soon."
+          "A minimal, product-first interface was chosen to keep attention on content and improve usability. Consistent spacing, restrained typography, and clear visual hierarchy help users scan products quickly while maintaining a premium aesthetic.",
+          "The final result is a scalable React UI template that balances design quality with engineering discipline. The project demonstrates the ability to translate product requirements into a polished, performant frontend solution suitable for production use."
         ]
       },
       "hero": {
         "images": [
           {
-            "src": "assets/dashboard.png",
-            "alt": "E-commerce screen"
-          },
-          {
-            "src": "assets/flow.png",
-            "alt": "E-commerce screen"
-          },
-          {
-            "src": "assets/accounts.png",
-            "alt": "E-commerce screen"
+            "src": "assets/bitesbike.jpg",
+            "alt": "Bites & Bikes storefront"
           }
         ]
       },
       "demoVideo": {
-        "src": "assets/demovideo.mp4",
+        "src": "assets/homerecorded.mp4",
         "type": "video/mp4"
       },
       "nav": {
@@ -165,13 +157,13 @@
         ]
       },
       "demoVideo": {
-        "src": "assets/demovideo.mp4",
+        "src": "assets/homerecorded.mp4",
         "type": "video/mp4"
       },
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Saas",
+          "title": "E-commerce",
           "href": "project-ecommerce.html"
         },
         "next": {
@@ -360,7 +352,7 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Saas",
+          "title": "E-commerce",
           "href": "project-ecommerce.html"
         },
         "next": {
