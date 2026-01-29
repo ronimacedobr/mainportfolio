@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "Finance",
-      "title": "Finance",
+      "title": "Mobile iOS",
       "intro": {
         "label": "Introduction",
         "text": "Product Designer · iOS Developer. A native iOS application designed to help freelancers and creatives manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular income and complex financial tracking, yet most finance apps are designed for traditional employees. Existing solutions felt generic, overwhelming, and stressful to use."
@@ -53,19 +53,19 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Côte Sauvage",
-          "href": "project-cote-sauvage.html"
+          "title": "Web",
+          "href": "project-legal-tech.html"
         },
         "next": {
           "label": "Next project",
-          "title": "E-commerce",
+          "title": "Saas",
           "href": "project-ecommerce.html"
         }
       }
     },
     {
       "id": "ecommerce",
-      "title": "E-commerce",
+      "title": "Saas",
       "intro": {
         "label": "Introduction",
         "text": "Project details coming soon."
@@ -116,19 +116,19 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Finance",
+          "title": "Mobile iOS",
           "href": "project-banking.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Logistics",
+          "title": "Web",
           "href": "project-legal-tech.html"
         }
       }
     },
     {
       "id": "legal-tech",
-      "title": "Logistics",
+      "title": "Web",
       "intro": {
         "label": "Introduction",
         "text": "Product Designer · Web Designer. A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale. Logistics platforms often struggle to communicate complex services in a simple and trustworthy way. Many existing industry websites feel outdated, overly technical, or visually cluttered, making it difficult for potential clients to quickly understand offerings and value.\n\nThe goal of this project was to design a clean, structured, and confident digital presence that communicates reliability, global reach, and operational efficiency, while remaining approachable for new and existing customers."
@@ -171,13 +171,13 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "E-commerce",
+          "title": "Saas",
           "href": "project-ecommerce.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Wine & Donuts",
-          "href": "project-wine-donuts.html"
+          "title": "Mobile iOS",
+          "href": "project-banking.html"
         }
       }
     },
@@ -234,13 +234,13 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Logistics",
+          "title": "Web",
           "href": "project-legal-tech.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Éclat",
-          "href": "project-eclat.html"
+          "title": "Mobile iOS",
+          "href": "project-banking.html"
         }
       }
     },
@@ -297,13 +297,13 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Wine & Donuts",
-          "href": "project-wine-donuts.html"
+          "title": "Mobile iOS",
+          "href": "project-banking.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Côte Sauvage",
-          "href": "project-cote-sauvage.html"
+          "title": "Web",
+          "href": "project-legal-tech.html"
         }
       }
     },
@@ -360,12 +360,12 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Éclat",
-          "href": "project-eclat.html"
+          "title": "Saas",
+          "href": "project-ecommerce.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Finance",
+          "title": "Mobile iOS",
           "href": "project-banking.html"
         }
       }
