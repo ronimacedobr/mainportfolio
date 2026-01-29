@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="project-page" data-project-id="legal-tech">
+<body class="project-page" data-project-id="mobile">
     <!-- Loader -->
     <div class="loader-container">
         <div class="counter" id="counter">0%</div>
@@ -54,9 +54,30 @@
         <!-- Hero -->
         <section class="projectHero">
             <div class="projectHeroDevices">
-                <img class="projectHeroImageFull" src="assets/herologistics.jpg" alt="Logistics hero" width="auto"
-                    height="auto" loading="lazy" data-project-src="hero.images.0.src"
-                    data-project-alt="hero.images.0.alt">
+                <div class="projectHeroDevice is-side">
+                    <div class="projectHeroPhone">
+                        <div class="projectHeroScreen">
+                            <img src="assets/dashboard.png" alt="Finance dashboard screen" width="auto" height="auto"
+                                loading="lazy" data-project-src="hero.images.0.src" data-project-alt="hero.images.0.alt">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectHeroDevice is-center">
+                    <div class="projectHeroPhone">
+                        <div class="projectHeroScreen">
+                            <img src="assets/flow.png" alt="Finance flow screen" width="auto" height="auto" loading="lazy"
+                                data-project-src="hero.images.1.src" data-project-alt="hero.images.1.alt">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectHeroDevice is-side">
+                    <div class="projectHeroPhone">
+                        <div class="projectHeroScreen">
+                            <img src="assets/accounts.png" alt="Finance accounts screen" width="auto" height="auto"
+                                loading="lazy" data-project-src="hero.images.2.src" data-project-alt="hero.images.2.alt">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -65,7 +86,7 @@
             <div class="projectTitle">
                 <div class="projectHeader_inner">
                     <div class="reveal">
-                        <h1 class="fontLarge" data-project-text="title">Web</h1>
+                        <h1 class="fontLarge" data-project-text="title">Mobile iOS</h1>
                     </div>
                 </div>
             </div>
@@ -73,67 +94,83 @@
             <div class="projectIntro">
                 <div class="projectBlock">
                     <p class="font16 projectLabel" data-project-text="role.label">Role</p>
-                    <p class="font16" data-project-text="role.text">Product Designer · Web Designer</p>
+                    <p class="font16" data-project-text="role.text">Product Designer · iOS Developer</p>
                 </div>
                 <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
                 <p class="font16 projectIntroText" data-project-text="intro.text">
-                    Project details coming soon.
+                    Product Designer · iOS Developer. A native iOS application designed to help freelancers and creatives
+                    manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular
+                    income and complex financial tracking, yet most finance apps are designed for traditional employees.
+                    Existing solutions felt generic, overwhelming, and stressful to use.
                 </p>
                 <div class="projectBlock">
                     <p class="font16 projectLabel" data-project-text="usersNeeds.label">Users &amp; Needs</p>
                     <p class="font16" data-project-text="usersNeeds.text">
-                        Details coming soon.
+                        This product was designed for freelancers and creatives with variable monthly income who need a
+                        clear and reliable way to understand their financial situation. The focus was on fast income
+                        tracking, an immediate overview of financial health, and a setup that minimizes effort and
+                        cognitive load.
                     </p>
                 </div>
 
                 <div class="projectBlock">
                     <p class="font16 projectLabel" data-project-text="process.label">Process</p>
                     <p class="font16" data-project-text="process.steps.0">
-                        Project details coming soon.
+                        The project began with research and discovery through interviews with freelancers and independent
+                        workers, combined with an analysis of existing personal finance apps to identify usability gaps
+                        and common pain points.
                     </p>
                     <p class="font16" data-project-text="process.steps.1">
-                        Project details coming soon.
+                        Based on these insights, wireframes were created with a strong focus on speed and simplicity. The
+                        interface was then developed into high-fidelity designs in Figma, aligned with Apple’s Human
+                        Interface Guidelines, and iterated continuously to remove unnecessary steps.
                     </p>
                     <p class="font16" data-project-text="process.steps.2">
-                        Project details coming soon.
+                        The application was built using Swift and SwiftUI, with Firebase integrated for authentication and
+                        data storage. Core user flows were tested directly on real devices throughout development to
+                        ensure reliability and performance.
                     </p>
                 </div>
             </div>
 
             <div class="projectImageRow">
-                <div class="projectHeroDevice is-center projectHeroVideo">
-                    <div class="projectHeroVideoFrame">
+                <div class="projectHeroDevice is-center">
+                    <div class="projectHeroPhone">
+                        <div class="projectHeroScreen">
                             <video autoplay loop muted playsinline preload="auto">
-                                <source src="assets/homerecorded.mp4" type="video/mp4" data-project-src="demoVideo.src" data-project-type="demoVideo.type">
+                                <source src="assets/demovideo.mp4" type="video/mp4"
+                                    data-project-src="demoVideo.src" data-project-type="demoVideo.type">
                             </video>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="projectContent">
                 <div class="projectBlock">
-                    <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp;
-                        Outcome</p>
+                    <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome
+                    </p>
                     <p class="font16" data-project-text="designDecisions.steps.0">
-                        Project details coming soon.
+                        A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual
+                        summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve,
+                        and user flows were designed to require as little manual input as possible.
                     </p>
                     <p class="font16" data-project-text="designDecisions.steps.1">
-                        Project details coming soon.
+                        The result was a polished and functional iOS application. Early feedback highlighted its clarity,
+                        ease of use, and the value of simplicity when working with personal finance tools.
                     </p>
                 </div>
-                <a class="projectPreview" href="https://novaalog.webflow.io" target="_blank" rel="noopener">
-                    Preview
-                </a>
             </div>
 
             <div class="projectNav">
-                <a class="projectNav_link" href="project-ecommerce.html" data-project-href="nav.previous.href">
+                <a class="projectNav_link" href="project-web.html" data-project-href="nav.previous.href">
                     <span class="font16 projectNav_label" data-project-text="nav.previous.label">Previous project</span>
-                    <span class="fontMedium projectNav_title" data-project-text="nav.previous.title">E-commerce</span>
+                    <span class="fontMedium projectNav_title" data-project-text="nav.previous.title">Web</span>
                 </a>
-                <a class="projectNav_link is-right" href="project-banking.html" data-project-href="nav.next.href">
+                <a class="projectNav_link is-right" href="project-ecommerce.html"
+                    data-project-href="nav.next.href">
                     <span class="font16 projectNav_label" data-project-text="nav.next.label">Next project</span>
-                    <span class="fontMedium projectNav_title" data-project-text="nav.next.title">Mobile iOS</span>
+                    <span class="fontMedium projectNav_title" data-project-text="nav.next.title">E-commerce</span>
                 </a>
             </div>
         </section>
@@ -153,11 +190,12 @@
                 </div>
                 <!-- footer inner -->
                 <div class="footer_inner">
-                    <p class="font16">Open to full-time product roles and selected collaborations</p>
+                    <p class="font16">Currently availbale
+                        for fulltime or freelance projects</p>
                     <div class="footer_col">
                         <p class="font16">Based in <br> Copenhagen, DK</p>
                         <h3 class="fontSmall">
-                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me!
+                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me! Always open for a chat or a coffee.
 
                             <a href="mailto:hi@ronimacedo.com" class="underLineLink">hi@ronimacedo.com</a>
                         </h3>
@@ -165,10 +203,9 @@
                     <div class="footer_col2">
                         <p class="font16">© 2025 — Built by Roni Macedo</p>
                         <div class="footer_inner_links">
-                            <a href="https://github.com/ronimacedobr" class="underLineLink">Github</a>
-                            <a href="https://www.linkedin.com/in/ronimacedo/" class="underLineLink">Linkedin</a>
-                            <a href="https://www.behance.net/ronimacedo" class="underLineLink">Behance</a>
-                            <a href="https://www.pinterest.com" class="underLineLink">Pinterest</a>
+                            <a href="index.html" class="underLineLink">Home</a>
+                            <a href="approach.html" class="underLineLink">Approach</a>
+                            <a href="project-mobile.html" class="underLineLink">Projects</a>
                         </div>
                     </div>
                 </div>

@@ -1042,60 +1042,60 @@ footer {
   height: auto;
   display: block;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroDevice {
+.project-page[data-project-id="web"] .projectHeroDevice {
   width: min(1040px, 100%);
   max-width: 100%;
   flex: 1 1 100%;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroPhone {
+.project-page[data-project-id="web"] .projectHeroPhone {
   background: transparent;
   border: 0;
   box-shadow: none;
   padding: 0;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroDevice.is-center .projectHeroPhone {
+.project-page[data-project-id="web"] .projectHeroDevice.is-center .projectHeroPhone {
   width: 737px;
   height: 447px;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroDevice.is-center .projectHeroScreen {
+.project-page[data-project-id="web"] .projectHeroDevice.is-center .projectHeroScreen {
   width: 100%;
   height: 100%;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroDevice.is-center .projectHeroScreen img {
+.project-page[data-project-id="web"] .projectHeroDevice.is-center .projectHeroScreen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroScreen {
+.project-page[data-project-id="web"] .projectHeroScreen {
   background: transparent;
   border-radius: 26px;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroScreen img {
+.project-page[data-project-id="web"] .projectHeroScreen img {
   border-radius: 26px;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroDevices {
+.project-page[data-project-id="web"] .projectHeroDevices {
   gap: 0;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroDevices {
+.project-page[data-project-id="web"] .projectHeroDevices {
   display: block;
   width: 100%;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroImageFull {
+.project-page[data-project-id="web"] .projectHeroImageFull {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 26px;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroVideo {
+.project-page[data-project-id="web"] .projectHeroVideo {
   width: 100%;
   max-width: 100%;
   flex: 1 1 auto;
 }
-.project-page[data-project-id="legal-tech"] .projectImageRow .projectHeroVideo {
+.project-page[data-project-id="web"] .projectImageRow .projectHeroVideo {
   width: 100%;
   max-width: 100%;
 }
-.project-page[data-project-id="legal-tech"] .projectPreview {
+.project-page[data-project-id="web"] .projectPreview {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1110,7 +1110,7 @@ footer {
   color: #181818;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.project-page[data-project-id="legal-tech"] .projectPreview:hover {
+.project-page[data-project-id="web"] .projectPreview:hover {
   background: #181818;
   color: #ffffff;
 }
@@ -1148,13 +1148,13 @@ footer {
   display: block;
   object-fit: cover;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroVideoFrame {
+.project-page[data-project-id="web"] .projectHeroVideoFrame {
   width: 100%;
   border-radius: 24px;
   overflow: hidden;
   background: #000000;
 }
-.project-page[data-project-id="legal-tech"] .projectHeroVideoFrame video {
+.project-page[data-project-id="web"] .projectHeroVideoFrame video {
   width: 100%;
   height: auto;
   display: block;

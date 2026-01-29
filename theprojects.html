@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roni Macedo">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Projects — Roni Macedo</title>
+    <!-- CSS -->
+    <!-- Loco -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="counter" id="counter">0%</div>
+        <div class="bar">
+            <div class="bar2"></div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main" data-textcolor="#181818" data-bgcolor="#f5f5f5">
+        <!-- Navbar -->
+        <nav>
+            <div class="wrapper">
+                <h1>
+                    <a class="brand-link" href="index.html">Roni Macedo</a>
+                </h1>
+                <div class="links">
+                    <a href="index.html" class="underLineLink">Index</a>
+                    <a href="approach.html" class="underLineLink">Approach</a>
+                </div>
+            </div>
+
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <h3 class="font16">Based in <br> Copenhagen, DK</h3>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="projectsHero">
+            <div class="projectsHero_content">
+                <h1 class="fontLarge">Works</h1>
+                <p class="font16">We are passionate about creating visually stunning and functional solutions that communicate effectively.</p>
+            </div>
+        </section>
+
+        <!-- Project Cards -->
+        <section class="projectCards">
+            <!-- Card 1: Mobile -->
+            <div class="projectCard">
+                <div class="projectCard_image">
+                    <img src="assets/Sofi.jpg" alt="Mobile iOS App" loading="lazy">
+                </div>
+                <div class="projectCard_info">
+                    <h2 class="fontMedium">Mobile iOS</h2>
+                    <p class="font16">A native iOS application designed to help freelancers and creatives manage income and expenses with clarity, speed, and minimal friction.</p>
+                    <div class="projectCard_meta">
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Client:</span>
+                            <span class="projectCard_metaValue">Personal Project</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Role:</span>
+                            <span class="projectCard_metaValue">Product Designer, iOS Developer</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Date:</span>
+                            <span class="projectCard_metaValue">2025</span>
+                        </div>
+                    </div>
+                    <a href="project-mobile.html" class="projectCard_link">
+                        <span>Case Study</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: E-commerce -->
+            <div class="projectCard">
+                <div class="projectCard_image">
+                    <img src="assets/bike.jpg" alt="Bites & Bikes E-commerce" loading="lazy">
+                </div>
+                <div class="projectCard_info">
+                    <h2 class="fontMedium">E-commerce</h2>
+                    <p class="font16">Bites & Bikes is a premium React UI solution built for modern bike shops, e-commerce storefronts, and lifestyle brands with strong performance.</p>
+                    <div class="projectCard_meta">
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Client:</span>
+                            <span class="projectCard_metaValue">Bites & Bikes</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Role:</span>
+                            <span class="projectCard_metaValue">Product Designer, Frontend Developer</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Date:</span>
+                            <span class="projectCard_metaValue">2024</span>
+                        </div>
+                    </div>
+                    <a href="project-ecommerce.html" class="projectCard_link">
+                        <span>Case Study</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Web -->
+            <div class="projectCard">
+                <div class="projectCard_image">
+                    <img src="assets/herologistics.jpg" alt="Logistics Web Design" loading="lazy">
+                </div>
+                <div class="projectCard_info">
+                    <h2 class="fontMedium">Web</h2>
+                    <p class="font16">A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale.</p>
+                    <div class="projectCard_meta">
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Client:</span>
+                            <span class="projectCard_metaValue">Logistics Company</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Role:</span>
+                            <span class="projectCard_metaValue">Product Designer, Web Designer</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Date:</span>
+                            <span class="projectCard_metaValue">2024</span>
+                        </div>
+                    </div>
+                    <a href="project-web.html" class="projectCard_link">
+                        <span>Case Study</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Wine & Donuts -->
+            <div class="projectCard">
+                <div class="projectCard_image">
+                    <img src="assets/ticket.jpg" alt="Wine & Donuts" loading="lazy">
+                </div>
+                <div class="projectCard_info">
+                    <h2 class="fontMedium">Wine & Donuts</h2>
+                    <p class="font16">A creative branding and visual identity project combining unexpected elements to create a memorable and distinctive brand experience.</p>
+                    <div class="projectCard_meta">
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Client:</span>
+                            <span class="projectCard_metaValue">Wine & Donuts</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Role:</span>
+                            <span class="projectCard_metaValue">Branding, UI/UX</span>
+                        </div>
+                        <div class="projectCard_metaRow">
+                            <span class="projectCard_metaLabel">Date:</span>
+                            <span class="projectCard_metaValue">2024</span>
+                        </div>
+                    </div>
+                    <a href="project-wine-donuts.html" class="projectCard_link">
+                        <span>Case Study</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Footer Details -->
+            <div id="footer_details" data-textcolor="#181818" data-bgcolor="#f5f5f5">
+                <!-- Heading -->
+                <div class="footer_heading">
+                    <div class="reveal">
+                        <h1 class="fontLarge">Reach</h1>
+                    </div>
+                    <div class="reveal">
+                        <h1 class="fontLarge">Out</h1>
+                    </div>
+                </div>
+                <!-- footer inner -->
+                <div class="footer_inner">
+                    <p class="font16">Currently availbale
+                        for fulltime or freelance projects</p>
+                    <div class="footer_col">
+                        <p class="font16">Based in <br> Copenhagen, DK</p>
+                        <h3 class="fontSmall">
+                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me! Always open for a chat or a coffee.
+
+                            <a href="mailto:hi@ronimacedo.com" class="underLineLink">hi@ronimacedo.com</a>
+                        </h3>
+                    </div>
+                    <div class="footer_col2">
+                        <p class="font16">© 2025 — Built by Roni Macedo</p>
+                        <div class="footer_inner_links">
+                            <a href="index.html" class="underLineLink">Home</a>
+                            <a href="approach.html" class="underLineLink">Approach</a>
+                            <a href="theprojects.html" class="underLineLink">Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EyeBall Social container -->
+            <div class="Footer_Social" data-textcolor="#e9e9e9" data-bgcolor="#181818">
+                <div class="footer_wrapper">
+                    <!-- eye -->
+                    <svg id="svg" viewBox="0 0 1000 1000">
+                        <g id="left-eye">
+                            <circle class="eye-outer" cx="400" cy="500" r="100" stroke="#181818" stroke-width="2"
+                                fill="#e9e9e9" />
+                            <circle class="eye-inner" cx="480" cy="500" r="20" fill="#181818" />
+                        </g>
+                        <g id="right-eye">
+                            <circle class="eye-outer" cx="600" cy="500" r="100" stroke="#181818" stroke-width="2"
+                                fill="#e9e9e9" />
+                            <circle class="eye-inner" cx="680" cy="500" r="20" fill="#181818" />
+                        </g>
+                    </svg>
+                    <!-- Links -->
+                    <div class="footer_container" data-scroll data-scroll-speed="-2">
+                        <div>
+                            <a href="https://github.com/ronimacedobr" class="footer_text">Github</a>
+                        </div>
+                        <div>
+                            <a href="https://www.behance.net/ronimacedo" class="footer_text">Behance</a>
+                            <a href="https://x.com" class="footer_text">Dribbble</a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/ronimacedo/" class="footer_text">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Locomotive -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Custom -->
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

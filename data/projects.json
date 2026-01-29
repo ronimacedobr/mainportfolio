@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": "Finance",
+      "id": "mobile",
       "title": "Mobile iOS",
       "intro": {
         "label": "Introduction",
@@ -54,7 +54,7 @@
         "previous": {
           "label": "Previous project",
           "title": "Web",
-          "href": "project-legal-tech.html"
+          "href": "project-web.html"
         },
         "next": {
           "label": "Next project",
@@ -109,17 +109,17 @@
         "previous": {
           "label": "Previous project",
           "title": "Mobile iOS",
-          "href": "project-banking.html"
+          "href": "project-mobile.html"
         },
         "next": {
           "label": "Next project",
           "title": "Web",
-          "href": "project-legal-tech.html"
+          "href": "project-web.html"
         }
       }
     },
     {
-      "id": "legal-tech",
+      "id": "web",
       "title": "Web",
       "intro": {
         "label": "Introduction",
@@ -169,7 +169,7 @@
         "next": {
           "label": "Next project",
           "title": "Mobile iOS",
-          "href": "project-banking.html"
+          "href": "project-mobile.html"
         }
       }
     },
@@ -227,12 +227,12 @@
         "previous": {
           "label": "Previous project",
           "title": "Web",
-          "href": "project-legal-tech.html"
+          "href": "project-web.html"
         },
         "next": {
           "label": "Next project",
           "title": "Mobile iOS",
-          "href": "project-banking.html"
+          "href": "project-mobile.html"
         }
       }
     },
@@ -290,12 +290,12 @@
         "previous": {
           "label": "Previous project",
           "title": "Mobile iOS",
-          "href": "project-banking.html"
+          "href": "project-mobile.html"
         },
         "next": {
           "label": "Next project",
           "title": "Web",
-          "href": "project-legal-tech.html"
+          "href": "project-web.html"
         }
       }
     },
@@ -358,7 +358,7 @@
         "next": {
           "label": "Next project",
           "title": "Mobile iOS",
-          "href": "project-banking.html"
+          "href": "project-mobile.html"
         }
       }
     }
