@@ -12,6 +12,10 @@ body {
   color: #181818;
 }
 
+body {
+  overflow: visible;
+}
+
 :root {
   /* Phone device sizes */
   --project-phone-width: 220px;
@@ -506,6 +510,7 @@ footer {
   width: 100%;
   padding-top: 10vw;
   padding-bottom: 10vw;
+  overflow: hidden;
 }
 .about .about_text {
   padding-top: 10vw;
@@ -848,7 +853,7 @@ footer {
 .projectDetails {
   width: 100%;
   padding-top: 0;
-  padding-bottom: 10vw;
+  padding-bottom: 5vw;
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
@@ -1132,9 +1137,37 @@ footer {
   height: auto;
   display: block;
 }
-.project-page[data-project-id="wine-donuts"] .projectHeroDevices .projectHeroImageFull {
-  width: var(--project-phone-width);
-  max-width: var(--project-phone-width);
+.project-page[data-project-id="wine-donuts"] .projectHeroDevices {
+  display: block;
+  width: 100%;
+  gap: 0;
+}
+.project-page[data-project-id="wine-donuts"] .projectHeroImageFull {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 26px;
+}
+.project-page[data-project-id="wine-donuts"] .projectHeroVideo {
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+.project-page[data-project-id="wine-donuts"] .projectImageRow .projectHeroVideo {
+  width: 100%;
+  max-width: 100%;
+}
+.project-page[data-project-id="wine-donuts"] .projectHeroVideoFrame {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #000000;
+}
+.project-page[data-project-id="wine-donuts"] .projectHeroVideoFrame video {
+  width: 100%;
+  height: 426px;
+  display: block;
+  object-fit: cover;
 }
 .project-page[data-project-id="ecommerce"] .projectHeroVideoFrame {
   width: 100%;
@@ -1307,6 +1340,90 @@ footer {
     width: 220px;
     max-width: 220px;
   }
+}
+
+.contactForm {
+  width: 100%;
+  padding: 10vw var(--container-padding);
+  background: #ffffff;
+  color: #181818;
+  display: flex;
+  justify-content: center;
+}
+.contactForm_inner {
+  width: min(100%, 640px);
+  max-width: 640px;
+  margin: 0 auto;
+  overflow: visible;
+  text-align: center;
+}
+.contactForm_heading {
+  max-width: 640px;
+  margin-bottom: var(--space-lg);
+}
+.contactForm_heading .fontMedium {
+  text-align: center;
+}
+.contactForm_heading p {
+  opacity: 0.7;
+}
+.contactForm_form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 600px;
+}
+.contactForm_label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  opacity: 0.6;
+  text-align: left;
+}
+.contactForm_input,
+.contactForm_textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #0a0a0a;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: TTHovesR;
+}
+.contactForm_textarea {
+  border-radius: 0;
+  min-height: 140px;
+  resize: vertical;
+}
+.contactForm_input::placeholder,
+.contactForm_textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contactForm_button {
+  margin-top: var(--space-md);
+  align-self: flex-start;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 999px;
+  border: 1px solid #181818;
+  background: transparent;
+  color: #181818;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.contactForm_button:hover {
+  background: #181818;
+  color: #ffffff;
+}
+.contactForm_heading p.fontMedium {
+  font-size: 24px;
+}
+.contactForm_heading h1.fontMedium {
+  font-weight: 300;
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
