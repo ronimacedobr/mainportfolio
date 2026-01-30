@@ -197,7 +197,7 @@ footer {
 }
 footer #footer_details {
   width: 100%;
-  padding: 10vw 0;
+  padding: 80px 0 10vw 0;
 }
 footer #footer_details .footer_heading {
   width: 100%;
@@ -549,8 +549,8 @@ footer {
 }
 
 .works .work_heading {
-  padding-bottom: 10vw;
-  padding-top: 10vw;
+  padding-bottom: 85px;
+  padding-top: 85px;
 }
 .works .work_heading .reveal {
   text-align: right;
@@ -853,10 +853,11 @@ footer {
 .projectDetails {
   width: 100%;
   padding-top: 0;
-  padding-bottom: 5vw;
+  padding-right: 25px;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
-  gap: var(--section-gap);
+  gap: 60px;
 }
 .projectTitle {
   width: 100%;
@@ -1245,7 +1246,7 @@ footer {
 
 .projectDetails .projectTitle .projectHeader_inner {
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 .projectDetails .projectTitle .reveal {
   overflow: visible;
