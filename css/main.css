@@ -69,8 +69,9 @@ html.has-scroll-smooth {
 }
 .fontLarge {
   font-size: 9vw;
-  font-family: TTHovesR;
-  letter-spacing: -0.4vw;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  letter-spacing: -3px;
   line-height: 100%;
 }
 
@@ -159,9 +160,11 @@ nav h1 {
 nav .brand-link {
   color: inherit;
   display: block;
+  font-size: 20px;
+  font-family: TTHovesM;
 }
 nav .links a {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: -1.5px;
   font-family: TTHovesD;
 }
