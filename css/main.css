@@ -1164,9 +1164,9 @@ footer {
   padding-bottom: 6vw;
   padding-left: 0;
   padding-right: 0;
-  text-align: right;
-  justify-content: flex-end;
-  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 /* projectHero inside projectIntroRow: 85px padding from frame1 above */
 .projectIntroRow .projectHero {
