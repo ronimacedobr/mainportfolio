@@ -1054,6 +1054,115 @@ footer {
   display: block;
   border-radius: 16px;
 }
+
+/* Testpage hero: Sofi finance card layout */
+.project-page[data-project-id="testpage"] .projectHero .projectHeroDevices {
+  display: block;
+  width: 100%;
+}
+.project-page[data-project-id="testpage"] .projectHeroCard {
+  width: 100%;
+  min-height: 100%;
+  padding: var(--container-padding);
+  border-radius: 0;
+}
+.project-page[data-project-id="testpage"] .projectHero_title {
+  margin: 0 0 2rem 0;
+  color: #0a0a0a;
+  line-height: 1.05;
+}
+/* Two-column hero intro: grid layout, max-width 1370px, centered */
+.project-page[data-project-id="testpage"] .two-column.projectHeroIntro {
+  max-width: 1370px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.project-page[data-project-id="testpage"] .projectHeroIntro_side {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+.project-page[data-project-id="testpage"] .projectHeroIntro_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.project-page[data-project-id="testpage"] .projectHeroIntro_label {
+  font-family: TTHovesR;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+.project-page[data-project-id="testpage"] .projectHeroIntro_textFrame {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 1rem 1.25rem;
+  min-height: 96px;
+  box-sizing: border-box;
+}
+.project-page[data-project-id="testpage"] .projectHeroIntro_text {
+  width: 100%;
+  margin: 0;
+  color: #181818;
+  line-height: 1.5;
+  max-width: 100%;
+}
+.project-page[data-project-id="testpage"] .projectHeroMeta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(24, 24, 24, 0.15);
+}
+.project-page[data-project-id="testpage"] .projectHeroMeta_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.15);
+}
+.project-page[data-project-id="testpage"] .projectHeroMeta_item:last-child {
+  border-bottom: none;
+}
+.project-page[data-project-id="testpage"] .projectHeroMeta_content {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.project-page[data-project-id="testpage"] .projectHeroMeta_label {
+  margin: 0;
+  color: rgba(24, 24, 24, 0.5);
+  font-weight: 400;
+}
+.project-page[data-project-id="testpage"] .projectHeroMeta_value {
+  margin: 0;
+  color: #181818;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .project-page[data-project-id="testpage"] .two-column.projectHeroIntro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
 .project-page[data-project-id="web"] .projectHeroDevice {
   width: min(1040px, 100%);
   max-width: 100%;
