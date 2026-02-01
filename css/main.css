@@ -23,7 +23,7 @@ body {
   
   /* Spacing scale */
   --space-xs: 8px;
-  --space-sm: 16px;
+  --space-sm: 18px;
   --space-md: 24px;
   --space-lg: 32px;
   --space-xl: 48px;
@@ -68,6 +68,7 @@ html.has-scroll-smooth {
   src: url(../fonts/TTHovesRegular.otf);
 }
 .fontLarge {
+  width: 100%;
   font-size: 9vw;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -90,7 +91,7 @@ html.has-scroll-smooth {
 }
 
 .font16 {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -0.3px;
 }
 
@@ -154,19 +155,11 @@ nav .wrapper {
 }
 nav h1 {
   font-size: 36px;
-  font-family: TTHovesD;
   letter-spacing: -1.5px;
 }
 nav .brand-link {
   color: inherit;
   display: block;
-  font-size: 20px;
-  font-family: TTHovesM;
-}
-nav .links a {
-  font-size: 20px;
-  letter-spacing: -1.5px;
-  font-family: TTHovesD;
 }
 nav .clock {
   font-size: 14px;
@@ -188,8 +181,6 @@ nav .clock {
     letter-spacing: -0.5px;
   }
   nav .links a {
-    font-size: 20px;
-    letter-spacing: -0.5px;
     padding-bottom: 5px;
   }
 }
@@ -856,18 +847,19 @@ footer {
 .projectDetails {
   width: 100%;
   padding-top: 0;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 35px;
+  padding-left: 35px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 0px;
 }
 .projectTitle {
   width: 100%;
-  max-width: var(--content-max-width);
   margin: 0 auto;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-top: 85px;
   padding-bottom: 0;
 }
 .projectIntro,
@@ -878,32 +870,160 @@ footer {
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
 }
+.projectIntroRow {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projectIntroFrame1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+  align-items: flex-start;
+}
+.projectIntroFrame2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+  align-items: flex-start;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+}
+.projectIntroLabels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-gap);
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  flex: 0 0 50%;
+  padding: 0;
+}
+.projectIntroLabels .projectBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-gap);
+  align-items: flex-start;
+}
 .projectIntro {
   display: flex;
   flex-direction: column;
   gap: var(--block-gap);
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex: 1 1 auto;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 25px;
 }
 .projectIntro p,
 .projectBlock p {
   margin: 0;
 }
+.projectIntroText {
+  text-align: left;
+}
+/* Intro row only: Introduction label + intro text */
+.projectIntroLabels > p.font16.projectLabel {
+  font-size: 20px;
+  font-family: TTHovesR;
+  opacity: 1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.projectIntroLabels > p.font16.projectLabel::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23000'/%3E%3Cpath d='M12 7v10M7 12h10' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.projectIntroLabels > p.font16.projectIntroText {
+  font-size: 24px;
+  font-family: TTHovesM;
+  color: rgba(0, 0, 0, 1);
+}
+.projectIntro > p.font16.projectIntroText,
+.projectIntro > p.font16 {
+  width: 100%;
+  font-size: 24px;
+  font-family: TTHovesM;
+  color: rgba(0, 0, 0, 1);
+}
+/* Process steps 2 & 3: exactly match dt.projectBlockMeta_label (body font + label style) */
+.projectIntroFrame2 .projectIntro > p.font16.projectBlockMeta_label,
+.projectContentFrame .projectIntro > p.font16.projectBlockMeta_label {
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  font-family: inherit;
+  margin: 0;
+  color: rgba(24, 24, 24, 0.5);
+  font-weight: 400;
+  text-align: left;
+}
 .projectContent {
+  width: 100%;
+  max-width: none;
   display: flex;
   flex-direction: column;
   gap: var(--block-gap);
+  padding-left: 0;
+  padding-right: 0;
+}
+/* Single parent frame filling the container; two equal columns inside */
+.projectContentFrame {
+  display: flex;
+  flex-direction: row;
+  gap: var(--block-gap);
+  width: 100%;
+  align-items: flex-start;
+  padding: 0 0 100px 0;
+  box-sizing: border-box;
+}
+/* Left frame: label (Design Decisions & Outcome) */
+.projectContentFrame .projectIntroLabels {
+  flex: 0 0 50%;
+  width: 50%;
+}
+.projectContentFrame .projectIntroLabels > p.font16.projectLabel {
+  width: 100%;
+}
+/* Right frame: intro body content */
+.projectContentFrame .projectIntro {
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
 }
 .projectNav {
   width: 100%;
-  max-width: var(--content-max-width);
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 4vw;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  padding-left: 25px;
+  padding-right: 25px;
   margin-top: 4vw;
   border-top: 1px solid rgba(24, 24, 24, 0.12);
   display: flex;
   justify-content: space-between;
   gap: 6vw;
+  overflow: hidden;
 }
 .projectNav_link {
   display: flex;
@@ -926,14 +1046,18 @@ footer {
 }
 .projectImageRow {
   width: 100%;
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  max-width: 100%;
+  margin: 150px auto 150px auto;
+  padding-left: 0px;
+  padding-right: 0px;
   display: flex;
-  align-items: stretch;
-  gap: 3vw;
+  align-items: center;
+  gap: 0px;
   justify-content: center;
+}
+.projectImageRow-left {
+  flex: 1;
+  min-width: 0;
 }
 .projectImageRow .projectImage {
   flex: 1;
@@ -946,13 +1070,66 @@ footer {
   max-width: var(--project-phone-width);
   flex: 0 0 var(--project-phone-width);
 }
+.projectImageRow > .projectHeroDevice {
+  width: auto;
+  max-width: none;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+.projectImageRow > .projectHeroDevice .projectHeroPhone,
+.projectImageRow > .projectHeroDevice .projectHeroVideoFrame {
+  width: var(--project-phone-width);
+  max-width: var(--project-phone-width);
+  flex: 0 0 auto;
+}
 .projectBlock {
   display: flex;
   flex-direction: column;
   gap: var(--block-gap);
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 .projectLabel {
   opacity: 0.5;
+  text-align: left;
+}
+/* Users & Needs design table: key-value pairs with dividers */
+.projectBlockMeta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin-top: var(--block-gap, 1rem);
+  border-top: 1px solid rgba(24, 24, 24, 0.15);
+}
+.projectBlockMeta_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.15);
+  gap: 1rem;
+}
+.projectBlockMeta_item:last-child {
+  border-bottom: none;
+}
+.projectBlockMeta_label {
+  margin: 0;
+  color: rgba(24, 24, 24, 0.5);
+  font-weight: 400;
+  text-align: left;
+}
+.projectBlockMeta_value {
+  margin: 0;
+  color: #181818;
+  font-weight: 600;
+  text-align: right;
 }
 .projectSubBlock {
   display: flex;
@@ -981,15 +1158,25 @@ footer {
 }
 .projectHero {
   width: 100%;
+  display: flex;
+  flex-flow: row;
   padding-top: 4vw;
   padding-bottom: 6vw;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* projectHero inside projectIntroRow: 85px padding from frame1 above */
+.projectIntroRow .projectHero {
+  padding-top: 85px;
+  padding-bottom: 85px;
 }
 .projectHero .projectHeroDevices {
-  width: 100%;
+  width: fit-content;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 24px;
 }
@@ -1045,7 +1232,9 @@ footer {
 .projectHeroScreen video {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
 }
 .projectHeroImageFull {
@@ -1207,12 +1396,12 @@ footer {
   display: block;
 }
 .project-page[data-project-id="web"] .projectHeroVideo {
-  width: 705px;
+  width: 100%;
   max-width: 100%;
   flex: 0 0 auto;
 }
 .project-page[data-project-id="web"] .projectImageRow .projectHeroVideo {
-  width: 705px;
+  width: 100%;
   max-width: 100%;
 }
 .project-page[data-project-id="web"] .projectPreview {
@@ -1226,7 +1415,7 @@ footer {
   border-radius: 30px;
   border: 1px solid #181818;
   font-family: TTHovesR;
-  font-size: 16px;
+  font-size: 18px;
   color: #181818;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -1235,12 +1424,12 @@ footer {
   color: #ffffff;
 }
 .project-page[data-project-id="ecommerce"] .projectHeroVideo {
-  width: 705px;
+  width: 100%;
   max-width: 100%;
   flex: 0 0 auto;
 }
 .project-page[data-project-id="ecommerce"] .projectImageRow .projectHeroVideo {
-  width: 705px;
+  width: 100%;
   max-width: 100%;
 }
 .project-page[data-project-id="ecommerce"] .projectHeroDevices {
@@ -1263,20 +1452,20 @@ footer {
   display: block;
 }
 .project-page[data-project-id="wine-donuts"] .projectHeroVideo {
-  width: 705px;
+  width: 100%;
   max-width: 100%;
   flex: 0 0 auto;
 }
 .project-page[data-project-id="wine-donuts"] .projectImageRow .projectHeroVideo {
-  width: 705px;
+  width: 100%;
   max-width: 100%;
 }
 .project-page[data-project-id="wine-donuts"] .projectHeroVideoFrame,
 .project-page[data-project-id="ecommerce"] .projectHeroVideoFrame,
 .project-page[data-project-id="web"] .projectHeroVideoFrame {
-  width: 705px;
+  width: 800px;
   max-width: 100%;
-  height: 396px;
+  height: fit-content;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -1285,7 +1474,9 @@ footer {
 .project-page[data-project-id="web"] .projectHeroVideoFrame video {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
   object-position: center top;
 }
@@ -1344,7 +1535,8 @@ footer {
 }
 .projectDetails .projectTitle h1 {
   line-height: 1.05;
-  padding-bottom: 0.04em;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -1360,6 +1552,21 @@ footer {
     padding-top: 0;
     padding-bottom: 18vw;
     gap: 10vw;
+  }
+  .projectIntroRow {
+    gap: var(--block-gap);
+  }
+  .projectIntroFrame1,
+  .projectIntroFrame2,
+  .projectContentFrame {
+    flex-direction: column;
+    gap: var(--block-gap);
+  }
+  .projectIntroLabels,
+  .projectIntro {
+    width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
   .projectIntro,
   .projectContent,
@@ -1380,6 +1587,13 @@ footer {
     flex-direction: column;
     gap: 6vw;
     align-items: center;
+  }
+  .projectImageRow-left {
+    display: none;
+  }
+  .projectImageRow > .projectHeroDevice {
+    flex: 0 0 auto;
+    justify-content: center;
   }
   .projectHero {
     padding-top: 14vw;
@@ -1424,7 +1638,7 @@ footer {
     font-size: 50px;
     letter-spacing: -2px;
     line-height: 1.05;
-    padding-bottom: 0.04em;
+    padding-bottom: 0px;
   }
   .projectHeroPhone {
     box-shadow: none;

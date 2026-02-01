@@ -13,20 +13,16 @@ nav {
 
     h1 {
         font-size: 36px;
-        font-family: TTHovesD;
         letter-spacing: -1.5px;
+        /* font-family inherited from body */
     }
 
     .brand-link {
-        font-size: 20px;
-        font-family: TTHovesM;
+        color: inherit;
+        display: block;
+        /* Font inherited from body - same as h3.font16 */
     }
 
-    a {
-        font-size: 20px;
-        letter-spacing: -1.5px;
-        font-family: TTHovesD;
-    }
 
     .clock {
         font-size: 14px;
@@ -50,9 +46,7 @@ nav {
             letter-spacing: -0.5px;
         }
 
-        a {
-            font-size: 20px;
-            letter-spacing: -0.5px;
+        .links a {
             padding-bottom: 5px;
         }
     }

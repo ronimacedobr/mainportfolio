@@ -13,7 +13,12 @@
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "This product was designed for freelancers and creatives with variable monthly income who need a clear and reliable way to understand their financial situation. The focus was on fast income tracking, an immediate overview of financial health, and a setup that minimizes effort and cognitive load."
+        "meta": {
+          "year": "2025",
+          "industry": "Tech Finance",
+          "scopeOfWork": "Full Stack",
+          "timeline": "April 2026"
+        }
       },
       "process": {
         "label": "Process",
@@ -76,7 +81,12 @@
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "The primary users include e-commerce businesses and product-driven teams, as well as developers, designers, and founders launching storefronts under tight timelines.\n\nKey needs addressed:\n- Fast setup without sacrificing design quality\n- Clear product hierarchy to support browsing and conversion\n- Responsive, mobile-first layouts\n- A modular codebase that supports customization and scaling\n\nThe goal was to reduce friction for both end users and the teams building on top of the template."
+        "meta": {
+          "year": "2025",
+          "industry": "E-commerce",
+          "scopeOfWork": "Product Design, Front-end Development",
+          "timeline": "2025"
+        }
       },
       "process": {
         "label": "Process",
@@ -131,7 +141,12 @@
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "This project was designed for logistics decision-makers, operations managers, and business clients seeking reliable freight and transportation services. Users needed a fast and intuitive way to understand service offerings, coverage, and capabilities without being overwhelmed by technical jargon.\n\nThe focus was on clear service categorization, strong visual hierarchy, and straightforward navigation, enabling users to quickly assess whether the company could meet their logistics needs and how to initiate contact or request a quote."
+        "meta": {
+          "year": "2025",
+          "industry": "Logistics & Freight",
+          "scopeOfWork": "Web Design, Client Portal",
+          "timeline": "2025"
+        }
       },
       "process": {
         "label": "Process",
@@ -186,7 +201,12 @@
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "Design to Code: Every project starts in Figma, where layout, hierarchy, and interaction patterns are defined with implementation in mind. Rather than treating design as a static handoff, I use it as a foundation that evolves once it meets real code and platform constraints."
+        "meta": {
+          "year": "2025",
+          "industry": "Product Engineering",
+          "scopeOfWork": "Digital Product Designer & iOS Developer",
+          "timeline": "2026"
+        }
       },
       "process": {
         "label": "Process",
@@ -241,7 +261,12 @@
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "Details coming soon."
+        "meta": {
+          "year": "2024",
+          "industry": "2024",
+          "scopeOfWork": "2024",
+          "timeline": "2024"
+        }
       },
       "process": {
         "label": "Process",
@@ -304,7 +329,12 @@
       },
       "usersNeeds": {
         "label": "Users & Needs",
-        "text": "Details coming soon."
+        "meta": {
+          "year": "2024",
+          "industry": "2024",
+          "scopeOfWork": "2024",
+          "timeline": "2024"
+        }
       },
       "process": {
         "label": "Process",
@@ -352,6 +382,44 @@
           "title": "Mobile iOS",
           "href": "project-mobile.html"
         }
+      }
+    },
+    {
+      "id": "testpage",
+      "title": "Test Page",
+      "intro": {
+        "label": "Introduction",
+        "text": "Product Designer · iOS Developer. A native iOS application designed to help freelancers and creatives manage income and expenses with clarity, speed, and minimal friction."
+      },
+      "usersNeeds": {
+        "label": "Users & Needs",
+        "meta": {
+          "year": "2025",
+          "industry": "Tech Finance",
+          "scopeOfWork": "Full Stack",
+          "timeline": "April 2026"
+        }
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
+          "The project began with research and discovery.",
+          "Wireframes were created with a strong focus on speed and simplicity.",
+          "The application was built using Swift and SwiftUI."
+        ]
+      },
+      "designDecisions": {
+        "label": "Design Decisions & Outcome",
+        "steps": [
+          "A minimalist interface was prioritized.",
+          "The result was a polished and functional iOS application."
+        ]
+      },
+      "hero": {},
+      "demoVideo": { "src": "assets/demovideo.mp4", "type": "video/mp4" },
+      "nav": {
+        "previous": { "label": "Previous project", "title": "Web", "href": "project-web.html" },
+        "next": { "label": "Next project", "title": "E-commerce", "href": "project-ecommerce.html" }
       }
     }
   ]

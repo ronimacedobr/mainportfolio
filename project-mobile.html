@@ -32,54 +32,17 @@
         <nav>
             <div class="wrapper">
                 <h1>
-                    <a class="brand-link" href="index.html">Roni Macedo</a>
+                    <a class="brand-link font16" href="index.html">Roni Macedo</a>
                 </h1>
                 <div class="links">
-                    <a href="index.html" class="underLineLink">Index</a>
-                    <a href="approach.html" class="underLineLink">Approach</a>
+                    <a href="index.html" class="underLineLink font16">Index</a>
+                    <a href="approach.html" class="underLineLink font16">Approach</a>
                 </div>
             </div>
 
             <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
             <h3 class="font16">Based in <br> Copenhagen, DK</h3>
         </nav>
-
-        <!-- Header -->
-        <section class="projectHeader">
-            <div class="projectHeader_inner">
-                <a href="index.html" class="underLineLink">Back to Index</a>
-            </div>
-        </section>
-
-        <!-- Hero -->
-        <section class="projectHero">
-            <div class="projectHeroDevices">
-                <div class="projectHeroDevice is-side">
-                    <div class="projectHeroPhone">
-                        <div class="projectHeroScreen">
-                            <img src="assets/dashboard.png" alt="Finance dashboard screen" width="auto" height="auto"
-                                loading="lazy" data-project-src="hero.images.0.src" data-project-alt="hero.images.0.alt">
-                        </div>
-                    </div>
-                </div>
-                <div class="projectHeroDevice is-center">
-                    <div class="projectHeroPhone">
-                        <div class="projectHeroScreen">
-                            <img src="assets/flow.png" alt="Finance flow screen" width="auto" height="auto" loading="lazy"
-                                data-project-src="hero.images.1.src" data-project-alt="hero.images.1.alt">
-                        </div>
-                    </div>
-                </div>
-                <div class="projectHeroDevice is-side">
-                    <div class="projectHeroPhone">
-                        <div class="projectHeroScreen">
-                            <img src="assets/accounts.png" alt="Finance accounts screen" width="auto" height="auto"
-                                loading="lazy" data-project-src="hero.images.2.src" data-project-alt="hero.images.2.alt">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Details -->
         <section class="projectDetails">
@@ -91,12 +54,12 @@
                 </div>
             </div>
 
-            <div class="projectIntro">
-                <div class="projectBlock">
-                    <p class="font16 projectLabel" data-project-text="role.label">Role</p>
-                    <p class="font16" data-project-text="role.text">Product Designer · iOS Developer</p>
-                </div>
-                <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
+            <div class="projectIntroRow">
+                <div class="projectIntroFrame1">
+                    <div class="projectIntroLabels">
+                        <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
+                    </div>
+                    <div class="projectIntro">
                 <p class="font16 projectIntroText" data-project-text="intro.text">
                     Product Designer · iOS Developer. A native iOS application designed to help freelancers and creatives
                     manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular
@@ -104,32 +67,77 @@
                     Existing solutions felt generic, overwhelming, and stressful to use.
                 </p>
                 <div class="projectBlock">
-                    <p class="font16 projectLabel" data-project-text="usersNeeds.label">Users &amp; Needs</p>
-                    <p class="font16" data-project-text="usersNeeds.text">
-                        This product was designed for freelancers and creatives with variable monthly income who need a
-                        clear and reliable way to understand their financial situation. The focus was on fast income
-                        tracking, an immediate overview of financial health, and a setup that minimizes effort and
-                        cognitive load.
-                    </p>
+                    <dl class="projectBlockMeta">
+                        <div class="projectBlockMeta_item">
+                            <dt class="font16 projectBlockMeta_label">Year</dt>
+                            <dd class="font16 projectBlockMeta_value" data-project-text="usersNeeds.meta.year">2025</dd>
+                        </div>
+                        <div class="projectBlockMeta_item">
+                            <dt class="font16 projectBlockMeta_label">Industry</dt>
+                            <dd class="font16 projectBlockMeta_value" data-project-text="usersNeeds.meta.industry">—</dd>
+                        </div>
+                        <div class="projectBlockMeta_item">
+                            <dt class="font16 projectBlockMeta_label">Scope of work</dt>
+                            <dd class="font16 projectBlockMeta_value" data-project-text="usersNeeds.meta.scopeOfWork">—</dd>
+                        </div>
+                        <div class="projectBlockMeta_item">
+                            <dt class="font16 projectBlockMeta_label">Timeline</dt>
+                            <dd class="font16 projectBlockMeta_value" data-project-text="usersNeeds.meta.timeline">—</dd>
+                        </div>
+                    </dl>
                 </div>
-
-                <div class="projectBlock">
-                    <p class="font16 projectLabel" data-project-text="process.label">Process</p>
-                    <p class="font16" data-project-text="process.steps.0">
-                        The project began with research and discovery through interviews with freelancers and independent
-                        workers, combined with an analysis of existing personal finance apps to identify usability gaps
-                        and common pain points.
-                    </p>
-                    <p class="font16" data-project-text="process.steps.1">
+                    </div>
+                </div>
+                <!-- Hero -->
+                <section class="projectHero">
+                    <div class="projectHeroDevices">
+                        <div class="projectHeroDevice is-side">
+                            <div class="projectHeroPhone">
+                                <div class="projectHeroScreen">
+                                    <img src="assets/dashboard.png" alt="Finance dashboard screen" width="auto" height="auto"
+                                        loading="lazy" data-project-src="hero.images.0.src" data-project-alt="hero.images.0.alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectHeroDevice is-center">
+                            <div class="projectHeroPhone">
+                                <div class="projectHeroScreen">
+                                    <img src="assets/flow.png" alt="Finance flow screen" width="auto" height="auto" loading="lazy"
+                                        data-project-src="hero.images.1.src" data-project-alt="hero.images.1.alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectHeroDevice is-side">
+                            <div class="projectHeroPhone">
+                                <div class="projectHeroScreen">
+                                    <img src="assets/accounts.png" alt="Finance accounts screen" width="auto" height="auto"
+                                        loading="lazy" data-project-src="hero.images.2.src" data-project-alt="hero.images.2.alt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="projectIntroFrame2">
+                    <div class="projectIntroLabels">
+                        <p class="font16 projectLabel" data-project-text="process.label">Process</p>
+                    </div>
+                    <div class="projectIntro">
+                        <p class="font16" data-project-text="process.steps.0">
+                            The project began with research and discovery through interviews with freelancers and independent
+                            workers, combined with an analysis of existing personal finance apps to identify usability gaps
+                            and common pain points.
+                        </p>
+                        <p class="font16 projectBlockMeta_label" data-project-text="process.steps.1">
                         Based on these insights, wireframes were created with a strong focus on speed and simplicity. The
                         interface was then developed into high-fidelity designs in Figma, aligned with Apple’s Human
                         Interface Guidelines, and iterated continuously to remove unnecessary steps.
-                    </p>
-                    <p class="font16" data-project-text="process.steps.2">
-                        The application was built using Swift and SwiftUI, with Firebase integrated for authentication and
-                        data storage. Core user flows were tested directly on real devices throughout development to
-                        ensure reliability and performance.
-                    </p>
+                        </p>
+                        <p class="font16 projectBlockMeta_label" data-project-text="process.steps.2">
+                            The application was built using Swift and SwiftUI, with Firebase integrated for authentication and
+                            data storage. Core user flows were tested directly on real devices throughout development to
+                            ensure reliability and performance.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -147,18 +155,21 @@
             </div>
 
             <div class="projectContent">
-                <div class="projectBlock">
-                    <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome
-                    </p>
-                    <p class="font16" data-project-text="designDecisions.steps.0">
-                        A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual
-                        summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve,
-                        and user flows were designed to require as little manual input as possible.
-                    </p>
-                    <p class="font16" data-project-text="designDecisions.steps.1">
-                        The result was a polished and functional iOS application. Early feedback highlighted its clarity,
-                        ease of use, and the value of simplicity when working with personal finance tools.
-                    </p>
+                <div class="projectContentFrame">
+                    <div class="projectIntroLabels">
+                        <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome</p>
+                    </div>
+                    <div class="projectIntro">
+                        <p class="font16" data-project-text="designDecisions.steps.0">
+                            A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual
+                            summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve,
+                            and user flows were designed to require as little manual input as possible.
+                        </p>
+                        <p class="font16 projectBlockMeta_label" data-project-text="designDecisions.steps.1">
+                            The result was a polished and functional iOS application. Early feedback highlighted its clarity,
+                            ease of use, and the value of simplicity when working with personal finance tools.
+                        </p>
+                    </div>
                 </div>
             </div>
 
