@@ -5,11 +5,44 @@ import { footersvg } from './footer.js';
 
 // Initialize all functionalities
 function init() {
+    setupBlurFade();
     setupLocomotiveScroll();
     showTime();
     colorChanger();
     projectHover();
     footersvg();
+}
+
+// Adaptive glassmorphism blur: read #main data-bgcolor, cap opacity at 35% for frosted-glass look
+function setupBlurFade() {
+    const main = document.getElementById("main");
+    const blurEl = document.querySelector(".blur-fade-bottom");
+    if (!main || !blurEl) return;
+    const hex = main.dataset.bgcolor;
+    if (!hex || typeof hex !== "string") return;
+    const rgb = hexToRgb(hex);
+    if (!rgb) return;
+    const { r, g, b } = rgb;
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    const isLight = luminance > 0.5;
+    const alphaStrong = Math.min(isLight ? 0.28 : 0.22, 0.35);
+    const highlightAlpha = isLight ? 0.12 : 0.06;
+    document.documentElement.style.setProperty("--fade-bg-strong", `rgba(${r},${g},${b},${alphaStrong})`);
+    document.documentElement.style.setProperty("--fade-bg-soft", `rgba(${r},${g},${b},0)`);
+    document.documentElement.style.setProperty("--fade-highlight", `rgba(255,255,255,${highlightAlpha})`);
+}
+
+function hexToRgb(hex) {
+    const raw = hex.replace(/^#/, "");
+    if (!/^[0-9A-Fa-f]{3}$|^[0-9A-Fa-f]{6}$/.test(raw)) return null;
+    const expanded = raw.length === 3
+        ? raw.split("").map((c) => c + c).join("")
+        : raw;
+    return {
+        r: parseInt(expanded.slice(0, 2), 16),
+        g: parseInt(expanded.slice(2, 4), 16),
+        b: parseInt(expanded.slice(4, 6), 16),
+    };
 }
 
 // Locomotive Scroll setup combined with ScrollTrigger
