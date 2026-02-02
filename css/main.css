@@ -1011,6 +1011,24 @@ footer {
   width: 50%;
   max-width: 50%;
 }
+/* Frame below projectContentFrame: image block */
+.projectContentImageFrame {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.projectContentImageFrame img {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+}
 .projectNav {
   width: 100%;
   max-width: 100%;
@@ -1404,23 +1422,56 @@ footer {
   width: 100%;
   max-width: 100%;
 }
-.project-page[data-project-id="web"] .projectPreview {
+.projectPreviewActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1.5em;
+  align-items: center;
+}
+.projectPreviewActions--live .projectPreview--doc {
+  display: none;
+}
+.projectPreviewActions--doc .projectPreview--live {
+  display: none;
+}
+.projectPreview {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   box-sizing: border-box;
-  width: 105px;
-  height: 40px;
-  padding: 14px 23px;
-  border-radius: 30px;
-  border: 1px solid #181818;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #181818;
   font-family: TTHovesR;
-  font-size: 18px;
-  color: #181818;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+.projectPreview:hover {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+.projectPreview_dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+.projectPreview_dot--blink {
+  animation: projectPreview_dot-blink 2.4s ease-in-out infinite;
+}
+@keyframes projectPreview_dot-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
 }
 .project-page[data-project-id="web"] .projectPreview:hover {
-  background: #181818;
+  background: #2a2a2a;
   color: #ffffff;
 }
 .project-page[data-project-id="ecommerce"] .projectHeroVideo {
@@ -1459,6 +1510,9 @@ footer {
 .project-page[data-project-id="wine-donuts"] .projectImageRow .projectHeroVideo {
   width: 100%;
   max-width: 100%;
+}
+.project-page[data-project-id="wine-donuts"] .projectContentImageFrame img {
+  display: none;
 }
 .project-page[data-project-id="wine-donuts"] .projectHeroVideoFrame,
 .project-page[data-project-id="ecommerce"] .projectHeroVideoFrame,
@@ -1787,4 +1841,68 @@ footer {
   opacity: 0.06;
   pointer-events: none;
   mix-blend-mode: overlay;
+}
+
+/* Documentation notification overlay – lightweight, non-blocking */
+.docNotification {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+.docNotification_card {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%) translateY(1rem);
+  width: calc(100% - 2rem);
+  max-width: 420px;
+  padding: 1.25rem 1.5rem;
+  background: rgba(245, 245, 245, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(24, 24, 24, 0.08);
+  font-family: TTHovesR;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #181818;
+  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+.docNotification--open .docNotification_card {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.docNotification_card p {
+  margin: 0 0 0.75rem;
+}
+.docNotification_card p:last-of-type {
+  margin-bottom: 1rem;
+}
+.docNotification_card a {
+  color: #181818;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.docNotification_close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-family: TTHovesR;
+  font-size: 14px;
+  color: #181818;
+  background: transparent;
+  border: 1px solid rgba(24, 24, 24, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.docNotification_close:hover {
+  background: rgba(24, 24, 24, 0.06);
+  border-color: rgba(24, 24, 24, 0.35);
 }

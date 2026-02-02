@@ -11,6 +11,7 @@ function init() {
     colorChanger();
     projectHover();
     footersvg();
+    setupDocNotification();
 }
 
 // Adaptive glassmorphism blur: read #main data-bgcolor, cap opacity at 35% for frosted-glass look
@@ -213,6 +214,52 @@ function setupProjectTransitions() {
                 }
             });
         });
+    });
+}
+
+function setupDocNotification() {
+    const docButtons = document.querySelectorAll('.projectPreview--doc');
+    if (!docButtons.length) return;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'docNotification';
+    wrap.setAttribute('aria-hidden', 'true');
+    wrap.innerHTML = `
+        <div class="docNotification_card" role="dialog" aria-label="Documentation notice">
+            <p>Full documentation is available upon request.</p>
+            <p>If you're a recruiter or potential partner, please feel free to reach out at <a href="mailto:hi@ronimacedo.com">hi@ronimacedo.com</a>.</p>
+            <button type="button" class="docNotification_close" aria-label="Close">Close</button>
+        </div>
+    `;
+    document.body.appendChild(wrap);
+
+    const card = wrap.querySelector('.docNotification_card');
+    const closeBtn = wrap.querySelector('.docNotification_close');
+
+    function open() {
+        wrap.classList.add('docNotification--open');
+        wrap.setAttribute('aria-hidden', 'false');
+    }
+    function close() {
+        wrap.classList.remove('docNotification--open');
+        wrap.setAttribute('aria-hidden', 'true');
+    }
+
+    docButtons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (wrap.classList.contains('docNotification--open')) close();
+            else open();
+        });
+    });
+
+    closeBtn.addEventListener('click', close);
+
+    document.addEventListener('click', (e) => {
+        if (!wrap.classList.contains('docNotification--open')) return;
+        if (card.contains(e.target)) return;
+        if (docButtons.length && [...docButtons].some((b) => b.contains(e.target))) return;
+        close();
     });
 }
 

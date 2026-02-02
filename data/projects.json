@@ -38,15 +38,15 @@
       "hero": {
         "images": [
           {
-            "src": "assets/dashboard.png",
+            "src": "assets/dashboard.webp",
             "alt": "Finance dashboard screen"
           },
           {
-            "src": "assets/flow.png",
+            "src": "assets/flow.webp",
             "alt": "Finance flow screen"
           },
           {
-            "src": "assets/accounts.png",
+            "src": "assets/accounts.webp",
             "alt": "Finance accounts screen"
           }
         ]
@@ -106,7 +106,7 @@
       "hero": {
         "images": [
           {
-            "src": "assets/bitesbike.jpg",
+            "src": "assets/bitesbike.webp",
             "alt": "Bites & Bikes storefront"
           }
         ]
@@ -166,7 +166,7 @@
       "hero": {
         "images": [
           {
-            "src": "assets/herologistics.jpg",
+            "src": "assets/herologistics.webp",
             "alt": "Logistics hero"
           }
         ]
@@ -226,7 +226,7 @@
       "hero": {
         "images": [
           {
-            "src": "assets/code.png",
+            "src": "assets/code.webp",
             "alt": "Logistics hero"
           }
         ]
@@ -286,15 +286,15 @@
       "hero": {
         "images": [
           {
-            "src": "assets/dashboard.png",
+            "src": "assets/dashboard.webp",
             "alt": "Éclat screen"
           },
           {
-            "src": "assets/flow.png",
+            "src": "assets/flow.webp",
             "alt": "Éclat screen"
           },
           {
-            "src": "assets/accounts.png",
+            "src": "assets/accounts.webp",
             "alt": "Éclat screen"
           }
         ]
@@ -354,15 +354,15 @@
       "hero": {
         "images": [
           {
-            "src": "assets/dashboard.png",
+            "src": "assets/dashboard.webp",
             "alt": "Côte Sauvage screen"
           },
           {
-            "src": "assets/flow.png",
+            "src": "assets/flow.webp",
             "alt": "Côte Sauvage screen"
           },
           {
-            "src": "assets/accounts.png",
+            "src": "assets/accounts.webp",
             "alt": "Côte Sauvage screen"
           }
         ]
