@@ -993,7 +993,8 @@ footer {
   flex-direction: row;
   gap: var(--block-gap);
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 0 0 100px 0;
   box-sizing: border-box;
 }
