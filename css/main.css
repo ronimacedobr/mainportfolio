@@ -1733,7 +1733,7 @@ footer {
     width: 100%;
     max-width: 100%;
   }
-  /* Full-width hero images for Code, Web, E-commerce projects */
+  /* Full-width hero images for Code, Web, Dora projects */
   .project-page[data-project-id="wine-donuts"] .projectHero .projectHeroDevices,
   .project-page[data-project-id="web"] .projectHero .projectHeroDevices,
   .project-page[data-project-id="dora"] .projectHero .projectHeroDevices {
@@ -1810,7 +1810,7 @@ footer {
   .projectHeroVideoFrame {
     border-radius: 10px;
   }
-  /* Full-width hero images for Code, Web, E-commerce projects */
+  /* Full-width hero images for Code, Web, Dora projects */
   .project-page[data-project-id="wine-donuts"] .projectHero .projectHeroDevices,
   .project-page[data-project-id="web"] .projectHero .projectHeroDevices,
   .project-page[data-project-id="dora"] .projectHero .projectHeroDevices {

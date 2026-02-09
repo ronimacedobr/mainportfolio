@@ -63,68 +63,8 @@
         },
         "next": {
           "label": "Next project",
-          "title": "E-commerce",
-          "href": "project-ecommerce.html"
-        }
-      }
-    },
-    {
-      "id": "ecommerce",
-      "title": "E-comerce",
-      "intro": {
-        "label": "Introduction",
-        "text": "Bites & Bikes is a premium React UI solution built for modern bike shops, e-commerce storefronts, and lifestyle brands. The project focuses on delivering a production-ready storefront with strong performance, clean structure, and scalable design patterns.\n\nMany existing e-commerce templates prioritize visuals over usability and code quality. This project was designed to bridge that gap by combining a refined UI with a maintainable, developer-friendly architecture suitable for real-world products."
-      },
-      "role": {
-        "label": "Role",
-        "text": "Product Designer · Frontend Developer"
-      },
-      "usersNeeds": {
-        "label": "Users & Needs",
-        "meta": {
-          "year": "2025",
-          "industry": "E-commerce",
-          "scopeOfWork": "Product Design, Front-end Development",
-          "timeline": "2025"
-        }
-      },
-      "process": {
-        "label": "Process",
-        "steps": [
-          "The project began with a review of existing React-based storefronts and e-commerce themes to identify usability and technical gaps, particularly around layout consistency, performance, and maintainability.",
-          "Based on these findings, a flexible layout system and reusable component structure were defined. Design decisions focused on clarity, predictable navigation, and a visual system that could adapt to different brand identities.",
-          "The UI was implemented using React and Tailwind CSS, with emphasis on clean component boundaries, reusable patterns, and performance-oriented rendering. Continuous testing ensured consistent behavior across devices and screen sizes."
-        ]
-      },
-      "designDecisions": {
-        "label": "Design Decisions & Outcome",
-        "steps": [
-          "A minimal, product-first interface was chosen to keep attention on content and improve usability. Consistent spacing, restrained typography, and clear visual hierarchy help users scan products quickly while maintaining a premium aesthetic.",
-          "The final result is a scalable React UI template that balances design quality with engineering discipline. The project demonstrates the ability to translate product requirements into a polished, performant frontend solution suitable for production use."
-        ]
-      },
-      "hero": {
-        "images": [
-          {
-            "src": "assets/bitesbike.webp",
-            "alt": "Bites & Bikes storefront"
-          }
-        ]
-      },
-      "demoVideo": {
-        "src": "assets/saasvideo.mp4",
-        "type": "video/mp4"
-      },
-      "nav": {
-        "previous": {
-          "label": "Previous project",
-          "title": "Mobile iOS",
-          "href": "project-mobile.html"
-        },
-        "next": {
-          "label": "Next project",
-          "title": "Web",
-          "href": "project-web.html"
+          "title": "Legal Saas",
+          "href": "project-dora.html"
         }
       }
     },
@@ -178,8 +118,8 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "E-commerce",
-          "href": "project-ecommerce.html"
+          "title": "Legal Saas",
+          "href": "project-dora.html"
         },
         "next": {
           "label": "Next project",
@@ -243,8 +183,8 @@
         },
         "next": {
           "label": "Next project",
-          "title": "Mobile iOS",
-          "href": "project-mobile.html"
+          "title": "Éclat",
+          "href": "project-eclat.html"
         }
       }
     },
@@ -306,13 +246,13 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Mobile iOS",
-          "href": "project-mobile.html"
+          "title": "Code",
+          "href": "project-wine-donuts.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Web",
-          "href": "project-web.html"
+          "title": "Côte Sauvage",
+          "href": "project-cote-sauvage.html"
         }
       }
     },
@@ -374,13 +314,13 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "E-commerce",
-          "href": "project-ecommerce.html"
+          "title": "Éclat",
+          "href": "project-eclat.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Mobile iOS",
-          "href": "project-mobile.html"
+          "title": "Test Page",
+          "href": "project-testpage.html"
         }
       }
     },
@@ -418,8 +358,8 @@
       "hero": {},
       "demoVideo": { "src": "assets/demovideo.mp4", "type": "video/mp4" },
       "nav": {
-        "previous": { "label": "Previous project", "title": "Web", "href": "project-web.html" },
-        "next": { "label": "Next project", "title": "E-commerce", "href": "project-ecommerce.html" }
+        "previous": { "label": "Previous project", "title": "Côte Sauvage", "href": "project-cote-sauvage.html" },
+        "next": { "label": "Next project", "title": "Mobile iOS", "href": "project-mobile.html" }
       }
     }
   ]
