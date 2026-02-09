@@ -1078,7 +1078,7 @@ footer {
 .projectImageRow {
   width: 100%;
   max-width: 100%;
-  margin: 150px auto 150px auto;
+  margin: 0px auto 0px auto;
   padding-left: 0px;
   padding-right: 0px;
   display: flex;
@@ -1087,8 +1087,9 @@ footer {
   justify-content: center;
 }
 .project-page[data-project-id="dora"] .projectImageRow {
-  width: 1000px;
+  width: 100%;
   border-radius: 0px;
+  box-sizing: content-box;
 }
 .projectImageRow-left {
   flex: 1;
@@ -1578,10 +1579,11 @@ footer {
   display: block;
 }
 .project-page[data-project-id="dora"] .projectImageRow .projectHeroImageFull {
-  width: 100%;
+  width: 1200px;
   max-width: 100%;
   height: 100%;
   display: block;
+  box-sizing: content-box;
   border-radius: 0px;
 }
 .project-page[data-project-id="dora"] .projectImageRow .projectHeroDevice.is-center.projectHeroPhoto {
