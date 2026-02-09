@@ -1020,6 +1020,7 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  height: fit-content;
 }
 .projectContentImageFrame img {
   display: block;
@@ -1177,7 +1178,7 @@ footer {
 .projectHero {
   width: 100%;
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   padding-top: 4vw;
   padding-bottom: 6vw;
   padding-left: 0;
@@ -1192,11 +1193,49 @@ footer {
   padding-bottom: 85px;
   flex-direction: row;
 }
+.ipad-frame {
+  width: 100%;
+  max-width: 980px;
+  background: #0f0f10;
+  border-radius: 32px;
+  padding: 18px;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+.ipad-frame::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 999px;
+  background: #2a2a2d;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+.ipad-screen {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.ipad-screen > img,
+.ipad-screen > video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  filter: none;
+  opacity: 1;
+}
 .projectHero .projectHeroDevices {
   width: fit-content;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 24px;
 }
@@ -1410,6 +1449,28 @@ footer {
   display: block;
   width: 100%;
 }
+.project-page[data-project-id="dora"] .projectContentImageFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-page[data-project-id="dora"] .projectHeroDevices,
+.project-page[data-project-id="dora"] .projectContentImageFrame {
+  align-items: center;
+  justify-content: center;
+}
+.project-page[data-project-id="dora"] .projectHeroDevice,
+.project-page[data-project-id="dora"] .projectHeroDevice.is-center {
+  width: min(1024px, 100%);
+  max-width: 100%;
+}
+.project-page[data-project-id="dora"] .projectHeroDevices .ipad-frame,
+.project-page[data-project-id="dora"] .projectContentImageFrame .ipad-frame {
+  width: 1024px;
+  height: fit-content;
+  max-width: 100%;
+  max-height: 100%;
+}
 .project-page[data-project-id="web"] .projectHeroImageFull {
   width: 100%;
   height: auto;
@@ -1476,20 +1537,25 @@ footer {
   background: #2a2a2a;
   color: #ffffff;
 }
-.project-page[data-project-id="ecommerce"] .projectHeroVideo {
+.project-page[data-project-id="dora"] .projectHeroVideo {
   width: 100%;
   max-width: 100%;
   flex: 0 0 auto;
 }
-.project-page[data-project-id="ecommerce"] .projectImageRow .projectHeroVideo {
+.project-page[data-project-id="dora"] .projectImageRow .projectHeroVideo {
   width: 100%;
   max-width: 100%;
 }
-.project-page[data-project-id="ecommerce"] .projectHeroDevices {
-  display: block;
+.project-page[data-project-id="dora"] .projectHeroDevices {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
   width: 100%;
 }
-.project-page[data-project-id="ecommerce"] .projectHeroDevices .projectHeroImageFull {
+.project-page[data-project-id="dora"] .projectHeroDevices .projectHeroImageFull {
   width: 100%;
   height: auto;
   display: block;
@@ -1517,7 +1583,7 @@ footer {
   display: none;
 }
 .project-page[data-project-id="wine-donuts"] .projectHeroVideoFrame,
-.project-page[data-project-id="ecommerce"] .projectHeroVideoFrame,
+.project-page[data-project-id="dora"] .projectHeroVideoFrame,
 .project-page[data-project-id="web"] .projectHeroVideoFrame {
   width: 800px;
   max-width: 100%;
@@ -1526,7 +1592,7 @@ footer {
   overflow: hidden;
 }
 .project-page[data-project-id="wine-donuts"] .projectHeroVideoFrame video,
-.project-page[data-project-id="ecommerce"] .projectHeroVideoFrame video,
+.project-page[data-project-id="dora"] .projectHeroVideoFrame video,
 .project-page[data-project-id="web"] .projectHeroVideoFrame video {
   width: 100%;
   height: 100%;
@@ -1670,13 +1736,13 @@ footer {
   /* Full-width hero images for Code, Web, E-commerce projects */
   .project-page[data-project-id="wine-donuts"] .projectHero .projectHeroDevices,
   .project-page[data-project-id="web"] .projectHero .projectHeroDevices,
-  .project-page[data-project-id="ecommerce"] .projectHero .projectHeroDevices {
+  .project-page[data-project-id="dora"] .projectHero .projectHeroDevices {
     display: block;
     width: 100%;
   }
   .project-page[data-project-id="wine-donuts"] .projectHero .projectHeroImageFull,
   .project-page[data-project-id="web"] .projectHero .projectHeroImageFull,
-  .project-page[data-project-id="ecommerce"] .projectHero .projectHeroImageFull {
+  .project-page[data-project-id="dora"] .projectHero .projectHeroImageFull {
     width: 100%;
     max-width: 100%;
   }
@@ -1747,7 +1813,7 @@ footer {
   /* Full-width hero images for Code, Web, E-commerce projects */
   .project-page[data-project-id="wine-donuts"] .projectHero .projectHeroDevices,
   .project-page[data-project-id="web"] .projectHero .projectHeroDevices,
-  .project-page[data-project-id="ecommerce"] .projectHero .projectHeroDevices {
+  .project-page[data-project-id="dora"] .projectHero .projectHeroDevices {
     display: block;
     width: 100%;
     padding: 0;
@@ -1755,7 +1821,7 @@ footer {
   }
   .project-page[data-project-id="wine-donuts"] .projectHero .projectHeroImageFull,
   .project-page[data-project-id="web"] .projectHero .projectHeroImageFull,
-  .project-page[data-project-id="ecommerce"] .projectHero .projectHeroImageFull {
+  .project-page[data-project-id="dora"] .projectHero .projectHeroImageFull {
     width: 100%;
     max-width: 100%;
   }
