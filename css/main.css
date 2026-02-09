@@ -1491,6 +1491,7 @@ footer {
 .project-page[data-project-id="dora"] .projectHeroDevice.is-center {
   width: min(1024px, 100%);
   max-width: 100%;
+  border-radius: 30px;
 }
 .project-page[data-project-id="dora"] .projectHeroDevices .ipad-frame,
 .project-page[data-project-id="dora"] .projectContentImageFrame .ipad-frame {
@@ -1587,6 +1588,13 @@ footer {
   width: 100%;
   height: auto;
   display: block;
+}
+.project-page[data-project-id="dora"] .projectImageRow .projectHeroImageFull {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 38px;
 }
 .project-page[data-project-id="wine-donuts"] .projectHeroDevices {
   display: block;
