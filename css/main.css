@@ -986,6 +986,7 @@ footer {
   gap: var(--block-gap);
   padding-left: 0;
   padding-right: 0;
+  align-items: center;
 }
 /* Single parent frame filling the container; two equal columns inside */
 .projectContentFrame {
