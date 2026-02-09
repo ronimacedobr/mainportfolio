@@ -1021,6 +1021,32 @@ footer {
   flex-direction: row;
   gap: 5px;
   height: fit-content;
+  background: #0f0f10;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  position: relative;
+  padding: 18px;
+  max-width: 980px;
+}
+.projectContentImageFrame::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 999px;
+  background: #2a2a2d;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+.projectContentImageFrame img {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: none;
+  opacity: 1;
 }
 .projectContentImageFrame img {
   display: block;
