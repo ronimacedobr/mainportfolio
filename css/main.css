@@ -1190,10 +1190,12 @@ footer {
 .projectIntroRow .projectHero {
   padding-top: 85px;
   padding-bottom: 85px;
+  flex-direction: row;
 }
 .projectHero .projectHeroDevices {
   width: fit-content;
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: center;
   gap: 24px;
