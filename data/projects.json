@@ -58,7 +58,7 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Code",
+          "title": "Engineering Process",
           "href": "project-wine-donuts.html"
         },
         "next": {
@@ -70,7 +70,7 @@
     },
     {
       "id": "web",
-      "title": "Web",
+      "title": "Logistics Web",
       "intro": {
         "label": "Introduction",
         "text": "Product Designer · Web Designer. A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale. Logistics platforms often struggle to communicate complex services in a simple and trustworthy way. Many existing industry websites feel outdated, overly technical, or visually cluttered, making it difficult for potential clients to quickly understand offerings and value.\n\nThe goal of this project was to design a clean, structured, and confident digital presence that communicates reliability, global reach, and operational efficiency, while remaining approachable for new and existing customers."
@@ -123,14 +123,14 @@
         },
         "next": {
           "label": "Next project",
-          "title": "Code",
+          "title": "Engineering Process",
           "href": "project-wine-donuts.html"
         }
       }
     },
     {
       "id": "wine-donuts",
-      "title": "Code",
+      "title": "Engineering Process",
       "intro": {
         "label": "Introduction",
         "text": "This page describes how I approach building digital products from design to production. I work end-to-end, translating ideas into real, working code while keeping design intent intact throughout the process.\n\nI'm early in my engineering career, but I take full ownership of the projects I work on and continuously refine my approach through real implementation."
@@ -167,7 +167,7 @@
         "images": [
           {
             "src": "assets/code.webp",
-            "alt": "Logistics hero"
+            "alt": "Engineering process and development workflow"
           }
         ]
       },
@@ -178,7 +178,7 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Web",
+          "title": "Logistics Web",
           "href": "project-web.html"
         },
         "next": {
