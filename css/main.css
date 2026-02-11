@@ -877,6 +877,7 @@ footer {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 120px;
   padding-left: 0;
   justify-content: flex-start;
   align-items: center;
@@ -987,6 +988,7 @@ footer {
   padding-left: 0;
   padding-right: 0;
   align-items: center;
+  margin-bottom: 80px;
 }
 /* Single parent frame filling the container; two equal columns inside */
 .projectContentFrame {
@@ -1078,7 +1080,7 @@ footer {
 .projectImageRow {
   width: 100%;
   max-width: 100%;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 120px auto;
   padding-left: 0px;
   padding-right: 0px;
   display: flex;
@@ -1198,6 +1200,7 @@ footer {
   flex-direction: row;
   padding-top: 4vw;
   padding-bottom: 6vw;
+  margin-bottom: 120px;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
