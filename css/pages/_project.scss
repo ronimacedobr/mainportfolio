@@ -1,0 +1,433 @@
+// Project Pages
+
+.projectDetails {
+    padding-top: 200px; // clearance for position: absolute nav
+
+    // Page Title
+    .projectTitle {
+        padding-bottom: 5vw;
+    }
+
+    // Intro Row: 3-column grid — intro text | hero | process
+    .projectIntroRow {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1fr;
+        gap: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        border-top: 1px solid rgba(198, 198, 198, 0.5);
+
+        .projectIntroFrame1,
+        .projectIntroFrame2 {
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+        }
+
+        .projectIntroLabels {
+            .projectLabel {
+                color: $grey;
+                margin-bottom: 20px;
+            }
+        }
+
+        .projectIntro {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .projectBlock {
+            padding-top: 3vw;
+            margin-top: 2vw;
+            border-top: 1px solid rgba(198, 198, 198, 0.5);
+        }
+
+        .projectBlockMeta {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .projectBlockMeta_item {
+                display: flex;
+                gap: 20px;
+                align-items: baseline;
+
+                .projectBlockMeta_label {
+                    color: $grey;
+                    width: 45%;
+                    flex-shrink: 0;
+                }
+
+                .projectBlockMeta_value {
+                    margin-left: 0;
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    // Hero section inside Intro Row
+    .projectHero {
+        padding: 0; // reset section default padding
+
+        .projectHeroDevices {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 2vw;
+            height: 55vh;
+            min-height: 350px;
+
+            .projectHeroDevice {
+                &.is-center {
+                    height: 100%;
+                    z-index: 2;
+                }
+
+                &.is-side {
+                    height: 80%;
+                    opacity: 0.8;
+                }
+            }
+
+            .projectHeroPhone {
+                height: 100%;
+                border-radius: 40px;
+                overflow: hidden;
+                background: $dark;
+                aspect-ratio: 9 / 19.5;
+                box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+
+                .projectHeroScreen {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+                    img,
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+            }
+
+            // Full-width image (web/desktop projects)
+            .projectHeroImageFull {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    // Image Row — demo video / single device
+    .projectImageRow {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgba(198, 198, 198, 0.5);
+
+        .projectHeroDevice {
+            &.is-center {
+                width: 300px;
+            }
+        }
+
+        .projectHeroPhone {
+            border-radius: 40px;
+            overflow: hidden;
+            background: $dark;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+
+            .projectHeroScreen {
+                overflow: hidden;
+
+                video,
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+
+        // Browser / video frame (web projects)
+        .projectHeroVideoFrame {
+            width: 100%;
+            max-width: 900px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+            video {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+
+    // Design Decisions content section
+    .projectContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        border-top: 1px solid rgba(198, 198, 198, 0.5);
+
+        .projectContentFrame {
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+
+            .projectIntroLabels {
+                .projectLabel {
+                    color: $grey;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .projectIntro {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .projectContentImageFrame {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    // CTA Links
+    .projectPreviewActions {
+        display: flex;
+        gap: 20px;
+        margin-top: 2vw;
+        flex-wrap: wrap;
+
+        .projectPreview {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            letter-spacing: -0.3px;
+            border-bottom: 1px solid $black;
+            padding-bottom: 5px;
+
+            .projectPreview_dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $black;
+                display: inline-block;
+                flex-shrink: 0;
+
+                &.projectPreview_dot--blink {
+                    animation: dotBlink 1.2s ease-in-out infinite;
+                }
+            }
+        }
+    }
+
+    // Previous / Next navigation
+    .projectNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        border-top: 1px solid rgba(198, 198, 198, 0.5);
+
+        .projectNav_link {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &.is-right {
+                text-align: right;
+                align-items: flex-end;
+            }
+        }
+
+        .projectNav_label {
+            color: $grey;
+        }
+    }
+}
+
+@keyframes dotBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Breakpoints */
+
+@media (max-width: 1068px) {
+    .projectDetails {
+        .projectIntroRow {
+            grid-template-columns: 1fr 1fr;
+
+            .projectHero {
+                grid-column: 1 / -1;
+                order: -1;
+
+                .projectHeroDevices {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectDetails {
+        padding-top: 140px;
+
+        .projectTitle {
+            padding-bottom: 8vw;
+        }
+
+        .projectIntroRow {
+            grid-template-columns: 1fr;
+            gap: 8vw;
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+
+            .projectHero {
+                grid-column: 1;
+                order: 0;
+
+                .projectHeroDevices {
+                    height: auto;
+                    min-height: unset;
+                    aspect-ratio: 4 / 3;
+
+                    .projectHeroDevice {
+                        &.is-side {
+                            height: 80%;
+                        }
+
+                        &.is-center {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .projectContent {
+            grid-template-columns: 1fr;
+            gap: 8vw;
+        }
+
+        .projectImageRow {
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+
+            .projectHeroDevice {
+                &.is-center {
+                    width: 220px;
+                }
+            }
+        }
+
+        .projectNav {
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .projectDetails {
+        padding-top: 110px;
+
+        .projectIntroRow {
+            gap: 12vw;
+
+            .projectHero {
+                .projectHeroDevices {
+                    aspect-ratio: 3 / 4;
+
+                    .projectHeroDevice.is-side {
+                        display: none;
+                    }
+
+                    .projectHeroDevice.is-center {
+                        height: 100%;
+                        width: 60vw;
+                        aspect-ratio: unset;
+                    }
+
+                    .projectHeroPhone {
+                        aspect-ratio: unset;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .projectBlockMeta {
+            .projectBlockMeta_item {
+                flex-direction: column;
+                gap: 5px;
+
+                .projectBlockMeta_label {
+                    width: 100%;
+                }
+            }
+        }
+
+        .projectContent {
+            gap: 12vw;
+            padding-top: 10vw;
+            padding-bottom: 10vw;
+        }
+
+        .projectImageRow {
+            padding-top: 10vw;
+            padding-bottom: 10vw;
+
+            .projectHeroDevice {
+                &.is-center {
+                    width: 55vw;
+                }
+            }
+
+            .projectHeroVideoFrame {
+                border-radius: 8px;
+            }
+        }
+
+        .projectPreviewActions {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .projectNav {
+            flex-direction: column;
+            gap: 10vw;
+            padding-top: 10vw;
+            padding-bottom: 10vw;
+
+            .projectNav_link {
+                &.is-right {
+                    text-align: left;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}

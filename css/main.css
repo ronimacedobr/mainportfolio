@@ -8,7 +8,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  font-family: TTHovesR;
+  font-family: TTHovesM;
   color: #181818;
 }
 
@@ -34,7 +34,7 @@ html.has-scroll-smooth {
   src: url(../fonts/TTHovesDemiBold.otf);
 }
 @font-face {
-  font-family: TTHovesR;
+  font-family: TTHovesM;
   src: url(../fonts/TTHovesMedium.otf);
 }
 @font-face {
@@ -65,7 +65,7 @@ html.has-scroll-smooth {
 }
 
 .font16 {
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: -0.3px;
 }
 
@@ -820,6 +820,340 @@ footer {
   }
   .approachDetails .col:nth-child(2) {
     margin-top: 100px;
+  }
+}
+.projectDetails {
+  padding-top: 200px;
+}
+.projectDetails .projectTitle {
+  padding-bottom: 5vw;
+}
+.projectDetails .projectIntroRow {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border-top: 1px solid rgba(198, 198, 198, 0.5);
+}
+.projectDetails .projectIntroRow .projectIntroFrame1,
+.projectDetails .projectIntroRow .projectIntroFrame2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.projectDetails .projectIntroRow .projectIntroLabels .projectLabel {
+  color: #5f5f5f;
+  margin-bottom: 20px;
+}
+.projectDetails .projectIntroRow .projectIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.projectDetails .projectIntroRow .projectBlock {
+  padding-top: 3vw;
+  margin-top: 2vw;
+  border-top: 1px solid rgba(198, 198, 198, 0.5);
+}
+.projectDetails .projectIntroRow .projectBlockMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.projectDetails .projectIntroRow .projectBlockMeta .projectBlockMeta_item {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+.projectDetails .projectIntroRow .projectBlockMeta .projectBlockMeta_item .projectBlockMeta_label {
+  color: #5f5f5f;
+  width: 45%;
+  flex-shrink: 0;
+}
+.projectDetails .projectIntroRow .projectBlockMeta .projectBlockMeta_item .projectBlockMeta_value {
+  margin-left: 0;
+  flex: 1;
+}
+.projectDetails .projectHero {
+  padding: 0;
+}
+.projectDetails .projectHero .projectHeroDevices {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2vw;
+  height: 55vh;
+  min-height: 350px;
+}
+.projectDetails .projectHero .projectHeroDevices .projectHeroDevice.is-center {
+  height: 100%;
+  z-index: 2;
+}
+.projectDetails .projectHero .projectHeroDevices .projectHeroDevice.is-side {
+  height: 80%;
+  opacity: 0.8;
+}
+.projectDetails .projectHero .projectHeroDevices .projectHeroPhone {
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #323232;
+  aspect-ratio: 9/19.5;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+.projectDetails .projectHero .projectHeroDevices .projectHeroPhone .projectHeroScreen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.projectDetails .projectHero .projectHeroDevices .projectHeroPhone .projectHeroScreen img,
+.projectDetails .projectHero .projectHeroDevices .projectHeroPhone .projectHeroScreen video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.projectDetails .projectHero .projectHeroDevices .projectHeroImageFull {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.projectDetails .projectImageRow {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(198, 198, 198, 0.5);
+}
+.projectDetails .projectImageRow .projectHeroDevice.is-center {
+  width: 300px;
+}
+.projectDetails .projectImageRow .projectHeroPhone {
+  border-radius: 40px;
+  overflow: hidden;
+  background: #323232;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+.projectDetails .projectImageRow .projectHeroPhone .projectHeroScreen {
+  overflow: hidden;
+}
+.projectDetails .projectImageRow .projectHeroPhone .projectHeroScreen video,
+.projectDetails .projectImageRow .projectHeroPhone .projectHeroScreen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.projectDetails .projectImageRow .projectHeroVideoFrame {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+.projectDetails .projectImageRow .projectHeroVideoFrame video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.projectDetails .projectContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border-top: 1px solid rgba(198, 198, 198, 0.5);
+}
+.projectDetails .projectContent .projectContentFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.projectDetails .projectContent .projectContentFrame .projectIntroLabels .projectLabel {
+  color: #5f5f5f;
+  margin-bottom: 20px;
+}
+.projectDetails .projectContent .projectContentFrame .projectIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.projectDetails .projectContent .projectContentImageFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.projectDetails .projectPreviewActions {
+  display: flex;
+  gap: 20px;
+  margin-top: 2vw;
+  flex-wrap: wrap;
+}
+.projectDetails .projectPreviewActions .projectPreview {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  border-bottom: 1px solid #181818;
+  padding-bottom: 5px;
+}
+.projectDetails .projectPreviewActions .projectPreview .projectPreview_dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #181818;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.projectDetails .projectPreviewActions .projectPreview .projectPreview_dot.projectPreview_dot--blink {
+  animation: dotBlink 1.2s ease-in-out infinite;
+}
+.projectDetails .projectNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border-top: 1px solid rgba(198, 198, 198, 0.5);
+}
+.projectDetails .projectNav .projectNav_link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projectDetails .projectNav .projectNav_link.is-right {
+  text-align: right;
+  align-items: flex-end;
+}
+.projectDetails .projectNav .projectNav_label {
+  color: #5f5f5f;
+}
+
+@keyframes dotBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+/* Breakpoints */
+@media (max-width: 1068px) {
+  .projectDetails .projectIntroRow {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projectDetails .projectIntroRow .projectHero {
+    grid-column: 1/-1;
+    order: -1;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices {
+    height: 50vh;
+  }
+}
+@media (max-width: 768px) {
+  .projectDetails {
+    padding-top: 140px;
+  }
+  .projectDetails .projectTitle {
+    padding-bottom: 8vw;
+  }
+  .projectDetails .projectIntroRow {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+  .projectDetails .projectIntroRow .projectHero {
+    grid-column: 1;
+    order: 0;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices {
+    height: auto;
+    min-height: unset;
+    aspect-ratio: 4/3;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices .projectHeroDevice.is-side {
+    height: 80%;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices .projectHeroDevice.is-center {
+    height: 100%;
+  }
+  .projectDetails .projectContent {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+  }
+  .projectDetails .projectImageRow {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+  .projectDetails .projectImageRow .projectHeroDevice.is-center {
+    width: 220px;
+  }
+  .projectDetails .projectNav {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+}
+@media (max-width: 560px) {
+  .projectDetails {
+    padding-top: 110px;
+  }
+  .projectDetails .projectIntroRow {
+    gap: 12vw;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices {
+    aspect-ratio: 3/4;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices .projectHeroDevice.is-side {
+    display: none;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices .projectHeroDevice.is-center {
+    height: 100%;
+    width: 60vw;
+    aspect-ratio: unset;
+  }
+  .projectDetails .projectIntroRow .projectHero .projectHeroDevices .projectHeroPhone {
+    aspect-ratio: unset;
+    width: 100%;
+  }
+  .projectDetails .projectBlockMeta .projectBlockMeta_item {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .projectDetails .projectBlockMeta .projectBlockMeta_item .projectBlockMeta_label {
+    width: 100%;
+  }
+  .projectDetails .projectContent {
+    gap: 12vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+  .projectDetails .projectImageRow {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+  .projectDetails .projectImageRow .projectHeroDevice.is-center {
+    width: 55vw;
+  }
+  .projectDetails .projectImageRow .projectHeroVideoFrame {
+    border-radius: 8px;
+  }
+  .projectDetails .projectPreviewActions {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .projectDetails .projectNav {
+    flex-direction: column;
+    gap: 10vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+  .projectDetails .projectNav .projectNav_link.is-right {
+    text-align: left;
+    align-items: flex-start;
   }
 }
 
