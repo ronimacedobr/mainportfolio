@@ -16,10 +16,11 @@
     overflow: hidden;
 }
 
-/* Intro Row — two-column layout */
+/* Intro Row — stacked layout */
 .projectIntroRow {
     display: flex;
-    gap: $gap;
+    flex-direction: column;
+    gap: 4vw;
     padding: 4vw 0;
 }
 
@@ -252,10 +253,6 @@
 @media (max-width: 768px) {
     .projectDetails {
         padding-top: 150px;
-    }
-
-    .projectIntroRow {
-        flex-direction: column;
     }
 
     .projectContentFrame {

@@ -838,7 +838,8 @@ footer {
 }
 .projectIntroRow {
   display: flex;
-  gap: 6vw;
+  flex-direction: column;
+  gap: 4vw;
   padding: 4vw 0;
 }
 .projectIntroFrame1,
@@ -1022,9 +1023,6 @@ footer {
 @media (max-width: 768px) {
   .projectDetails {
     padding-top: 150px;
-  }
-  .projectIntroRow {
-    flex-direction: column;
   }
   .projectContentFrame {
     flex-direction: column;
