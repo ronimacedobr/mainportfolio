@@ -1,7 +1,7 @@
 nav {
     position: absolute;
     width: 100%;
-    padding: 35px 35px;
+    padding: 35px max(35px, calc((100vw - 2048px) / 2 + 35px));
     display: flex;
     justify-content: space-between;
     z-index: 10;
@@ -12,8 +12,8 @@ nav {
     }
 
     h1 {
-        font-size: 36px;
-        letter-spacing: -1.5px;
+        font-size: clamp(24px, 2.5vw, 40px);
+        letter-spacing: clamp(-1.5px, -0.1vw, -0.5px);
         /* font-family inherited from body */
     }
 
@@ -25,7 +25,7 @@ nav {
 
 
     .clock {
-        font-size: 14px;
+        font-size: clamp(12px, 1vw, 15px);
         width: 120px;
     }
 }
@@ -39,11 +39,6 @@ nav {
 
         .wrapper {
             gap: 30vw;
-        }
-
-        h1 {
-            font-size: 24px;
-            letter-spacing: -0.5px;
         }
 
         .links a {

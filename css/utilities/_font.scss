@@ -11,29 +11,29 @@
 
 .fontLarge {
     width: 100%;
-    font-size: 9vw;
+    font-size: clamp(48px, 9vw, 180px);
     font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
-    letter-spacing: -3px;
+    letter-spacing: clamp(-5px, -0.2vw, -2px);
     line-height: 1.2;
 }
 
 .fontMedium {
-    font-size: 5vw;
+    font-size: clamp(28px, 5vw, 96px);
     font-family: TTHovesR;
     line-height: 1.25;
     letter-spacing: -0.15vw;
 }
 
 .fontSmall {
-    font-size: 3vw;
+    font-size: clamp(18px, 3vw, 56px);
     font-family: TTHovesR;
     line-height: 1.25;
     letter-spacing: -0.09vw;
 }
 
 .font16 {
-    font-size: 18px;
+    font-size: clamp(16px, 1.25vw, 22px);
     font-family: TTHovesR;
     letter-spacing: -0.3px;
     line-height: 1.5;
@@ -51,18 +51,6 @@
 /* Breakpoitns */
 
 @media (max-width: 768px) {
-    .fontLarge {
-        font-size: 15vw;
-    }
-
-    .fontMedium {
-        font-size: 7vw;
-    }
-
-    .fontSmall {
-        font-size: 5vw;
-    }
-
     .reveal {
         h1 {
             transform: translateY(15vw);
@@ -71,19 +59,6 @@
 }
 
 @media (max-width: 560px) {
-    .fontLarge {
-        font-size: 20vw;
-        letter-spacing: -1vw;
-    }
-
-    .fontMedium {
-        font-size: 12vw;
-    }
-
-    .fontSmall {
-        font-size: 8vw;
-    }
-
     .reveal {
         h1 {
             transform: translateY(20vw);

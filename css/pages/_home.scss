@@ -201,7 +201,7 @@
             gap: 2em;
             border-bottom: 1px solid rgba(198, 198, 198, 0.5);
             h2 {
-                font-size: 4vw;
+                font-size: clamp(32px, 4vw, 72px);
             }
 
             &#w-4 {
@@ -213,7 +213,7 @@
                 gap: 20px;
 
                 span {
-                    font-size: 14px;
+                    font-size: clamp(12px, 1vw, 16px);
                 }
             }
 
@@ -347,7 +347,6 @@
                 padding: 1em 0;
                 gap: 2em;
                 h2 {
-                    font-size: 7vw;
                     letter-spacing: -0.2vw;
                 }
                 .work-item-icon {
@@ -421,7 +420,6 @@
             padding-bottom: 20vw;
             .work-item {
                 h2 {
-                    font-size: 10vw;
                     letter-spacing: -0.3vw;
                 }
             }

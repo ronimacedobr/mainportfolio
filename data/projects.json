@@ -87,7 +87,7 @@
     },
     {
       "id": "web",
-      "title": "Logistics Web",
+      "title": "Web Design",
       "intro": {
         "label": "Introduction",
         "text": "Product Designer · Web Designer. A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale. Logistics platforms often struggle to communicate complex services in a simple and trustworthy way. Many existing industry websites feel outdated, overly technical, or visually cluttered, making it difficult for potential clients to quickly understand offerings and value.\n\nThe goal of this project was to design a clean, structured, and confident digital presence that communicates reliability, global reach, and operational efficiency, while remaining approachable for new and existing customers.",
@@ -162,7 +162,7 @@
       "process": {
         "label": "Process",
         "steps": [
-          "AI-Assisted Development: I use Cursor with AI assistance as a support tool during development. It helps me explore architectural options, validate trade-offs, refactor for clarity, and reason through edge cases. AI is used to support decision-making, not to replace understanding or ownership of the code.",
+          "AI-Assisted Development: I use VS Code with AI assistance as a support tool during development. It helps me explore architectural options, validate trade-offs, refactor for clarity, and reason through edge cases. AI is used to support decision-making, not to replace understanding or ownership of the code.",
           "Implementation – iOS: For iOS projects, I work with Swift and SwiftUI, focusing on state-driven interfaces, reusable views, and native performance. I aim for clean separation between UI, logic, and data, refining structure as the project grows.",
           "Implementation – Web: For web projects, I work primarily with React and a component-based approach. My focus is on readable, maintainable components that are easy to extend and understand by others."
         ]
@@ -189,7 +189,7 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Logistics Web",
+          "title": "Web Design",
           "href": "project-web.html"
         },
         "next": {

@@ -68,7 +68,7 @@ section,
 footer {
     width: 100%;
     overflow-x: hidden;
-    padding: 0 35px;
+    padding: 0 max(35px, calc((100vw - 2048px) / 2 + 35px));
 }
 
 /* Break Points */
@@ -101,5 +101,92 @@ footer {
         #counter {
             font-size: 20vw;
         }
+    }
+}
+
+/* Doc Notification Popup */
+.docNotification {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+
+    &--open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.docNotification_card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: $black;
+    color: $white;
+    padding: 16px 20px;
+    border-radius: 100px;
+    white-space: nowrap;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.docNotification_text {
+    font-family: TTHovesR;
+    font-size: 14px;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.docNotification_cta {
+    font-family: TTHovesR;
+    font-size: 14px;
+    color: $white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease;
+    flex-shrink: 0;
+
+    &:hover {
+        border-color: $white;
+    }
+}
+
+.docNotification_close {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+@media (max-width: 560px) {
+    .docNotification {
+        bottom: 20px;
+        left: 15px;
+        right: 15px;
+        transform: translateY(12px);
+
+        &--open {
+            transform: translateY(0);
+        }
+    }
+
+    .docNotification_card {
+        border-radius: 20px;
+        flex-wrap: wrap;
+        white-space: normal;
     }
 }

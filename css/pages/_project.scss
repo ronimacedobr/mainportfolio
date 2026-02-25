@@ -6,10 +6,10 @@ $project-media-max: 1200px;
 
 /* Details wrapper — single-direction spacing via gap */
 .projectDetails {
-    padding-top: 200px;
+    padding-top: 18vh;
     display: flex;
     flex-direction: column;
-    gap: 12vw;
+    gap: 6vw;
 }
 
 /* Intro + Process wrapper — tighter internal gap */
@@ -78,6 +78,22 @@ $project-media-max: 1200px;
     font-family: TTHovesR;
 }
 
+/* Tool Stack Pills (Engineering Process page) */
+.projectToolStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2vw;
+}
+
+.projectToolStack_pill {
+    padding: 8px 20px;
+    border: 1px solid currentColor;
+    border-radius: 100px;
+    white-space: nowrap;
+    opacity: 0.7;
+}
+
 /* ───── Section Rows (label left / content right) ───── */
 .projectRow {
     display: flex;
@@ -107,10 +123,6 @@ $project-media-max: 1200px;
 }
 
 /* Hero Section */
-.projectHero {
-    padding-top: 8vw;
-}
-
 .projectHeroDevices {
     display: flex;
     justify-content: center;
@@ -287,13 +299,10 @@ $project-media-max: 1200px;
 .projectNav {
     display: flex;
     justify-content: space-between;
-    background-color: #181818;
-    color: #e9e9e9;
-    padding: 6vw 35px;
-    margin: 0 -35px;
+    color: inherit;
 
-    * {
-        color: #e9e9e9;
+    a, span {
+        color: inherit;
     }
 }
 
@@ -319,11 +328,159 @@ $project-media-max: 1200px;
 }
 
 /* ═══════════════════════════════════════
+   iPhone 17 Pro Frame — Mobile iOS page only
+   ═══════════════════════════════════════ */
+body[data-project-id="mobile"] {
+
+    .iphoneFrame {
+        position: relative;
+        width: 280px;
+        aspect-ratio: 402 / 874;
+        border-radius: 58px;
+        background: #1a1a1a;
+        padding: 6px;
+        box-shadow: 
+            inset 0 0 0 1px rgba(255,255,255,0.1),
+            0 12px 40px rgba(0,0,0,0.15);
+        flex-shrink: 0;
+    }
+
+    /* Front Camera Pill */
+    .iphoneFrame::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 26px;
+        background: #000;
+        border-radius: 14px;
+        z-index: 3;
+    }
+
+    /* Hide notch on specific frames */
+    .iphoneFrame--noNotch::before {
+        display: none;
+    }
+
+    .iphoneFrame_screen {
+        width: 100%;
+        height: 100%;
+        border-radius: 52px;
+        overflow: hidden;
+        position: relative;
+        background: #000;
+
+        img, video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    /* Override hero devices for phone layout */
+    .projectHeroDevices {
+        gap: 3vw;
+    }
+
+    /* Override full-image styles inside frames */
+    .iphoneFrame .projectHeroImageFull {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Video inside frame */
+    .iphoneFrame .projectHeroVideoFrame {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iphoneFrame .projectHeroVideoFrame video {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Image row frames */
+    .projectImageRow .iphoneFrame {
+        width: 320px;
+    }
+}
+
+/* iPhone Frame — Responsive Tablet */
+@media (max-width: 768px) {
+    body[data-project-id="mobile"] {
+        .iphoneFrame {
+            width: 220px;
+        }
+
+        .iphoneFrame::before {
+            width: 70px;
+            height: 20px;
+            top: 10px;
+        }
+
+        .iphoneFrame_screen {
+            border-radius: 42px;
+        }
+
+        .projectImageRow .iphoneFrame {
+            width: 260px;
+        }
+    }
+}
+
+/* iPhone Frame — Responsive Mobile */
+@media (max-width: 560px) {
+    body[data-project-id="mobile"] {
+        .iphoneFrame {
+            width: 160px;
+            border-radius: 38px;
+            padding: 4px;
+        }
+
+        .iphoneFrame::before {
+            width: 54px;
+            height: 16px;
+            top: 8px;
+            border-radius: 10px;
+        }
+
+        .iphoneFrame_screen {
+            border-radius: 34px;
+        }
+
+        .projectImageRow .iphoneFrame {
+            width: 240px;
+            border-radius: 50px;
+            padding: 5px;
+        }
+
+        .projectImageRow .iphoneFrame::before {
+            width: 76px;
+            height: 22px;
+            top: 10px;
+            border-radius: 12px;
+        }
+
+        .projectImageRow .iphoneFrame .iphoneFrame_screen {
+            border-radius: 45px;
+        }
+    }
+}
+
+/* ═══════════════════════════════════════
    Responsive — Tablet
    ═══════════════════════════════════════ */
 @media (max-width: 768px) {
     .projectDetails {
-        padding-top: 150px;
+        padding-top: 15vh;
     }
 
     .projectIntroRow {
@@ -373,7 +530,7 @@ $project-media-max: 1200px;
    ═══════════════════════════════════════ */
 @media (max-width: 560px) {
     .projectDetails {
-        padding-top: 120px;
+        padding-top: 12vh;
     }
 
     .projectHeroPhone {

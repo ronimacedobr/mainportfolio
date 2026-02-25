@@ -226,9 +226,9 @@ function setupDocNotification() {
     wrap.setAttribute('aria-hidden', 'true');
     wrap.innerHTML = `
         <div class="docNotification_card" role="dialog" aria-label="Documentation notice">
-            <p>Full documentation is available upon request.</p>
-            <p>If you're a recruiter or potential partner, please feel free to reach out at <a href="mailto:hi@ronimacedo.com">hi@ronimacedo.com</a>.</p>
-            <button type="button" class="docNotification_close" aria-label="Close">Close</button>
+            <p class="docNotification_text">All projects have end-to-end documentation — happy to share once we connect.</p>
+            <a class="docNotification_cta" href="mailto:roni.msousa@outlook.com">Let's talk →</a>
+            <button type="button" class="docNotification_close" aria-label="Close">✕</button>
         </div>
     `;
     document.body.appendChild(wrap);
