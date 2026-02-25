@@ -9,6 +9,13 @@ $project-media-max: 1200px;
     padding-top: 200px;
     display: flex;
     flex-direction: column;
+    gap: 12vw;
+}
+
+/* Intro + Process wrapper — tighter internal gap */
+.projectIntroBlock {
+    display: flex;
+    flex-direction: column;
     gap: 4vw;
 }
 
@@ -101,7 +108,7 @@ $project-media-max: 1200px;
 
 /* Hero Section */
 .projectHero {
-    /* no padding — parent gap handles spacing */
+    padding-top: 8vw;
 }
 
 .projectHeroDevices {
@@ -280,7 +287,14 @@ $project-media-max: 1200px;
 .projectNav {
     display: flex;
     justify-content: space-between;
-    /* no padding/border — parent gap handles spacing */
+    background-color: #181818;
+    color: #e9e9e9;
+    padding: 6vw 35px;
+    margin: 0 -35px;
+
+    * {
+        color: #e9e9e9;
+    }
 }
 
 .projectNav_link {

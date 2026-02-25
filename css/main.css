@@ -66,7 +66,8 @@ html.has-scroll-smooth {
 }
 
 .font16 {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: TTHovesR;
   letter-spacing: -0.3px;
   line-height: 1.5;
 }
@@ -832,6 +833,13 @@ footer {
   padding-top: 200px;
   display: flex;
   flex-direction: column;
+  gap: 12vw;
+}
+
+/* Intro + Process wrapper — tighter internal gap */
+.projectIntroBlock {
+  display: flex;
+  flex-direction: column;
   gap: 4vw;
 }
 
@@ -921,7 +929,7 @@ footer {
 
 /* Hero Section */
 .projectHero {
-  /* no padding — parent gap handles spacing */
+  padding-top: 8vw;
 }
 
 .projectHeroDevices {
@@ -1090,7 +1098,13 @@ footer {
 .projectNav {
   display: flex;
   justify-content: space-between;
-  /* no padding/border — parent gap handles spacing */
+  background-color: #181818;
+  color: #e9e9e9;
+  padding: 6vw 35px;
+  margin: 0 -35px;
+}
+.projectNav * {
+  color: #e9e9e9;
 }
 
 .projectNav_link {
