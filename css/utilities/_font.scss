@@ -15,26 +15,27 @@
     font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
     letter-spacing: -3px;
-    line-height: 100%;
+    line-height: 1.2;
 }
 
 .fontMedium {
     font-size: 5vw;
     font-family: TTHovesR;
-    line-height: 95%;
+    line-height: 1.25;
     letter-spacing: -0.15vw;
 }
 
 .fontSmall {
     font-size: 3vw;
     font-family: TTHovesR;
-    line-height: 95%;
+    line-height: 1.25;
     letter-spacing: -0.09vw;
 }
 
 .font16 {
     font-size: 16px;
     letter-spacing: -0.3px;
+    line-height: 1.5;
 }
 
 /* Reveal text */

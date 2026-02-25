@@ -56,41 +56,23 @@
             </div>
 
             <!-- Hero -->
-            <section class="projectHero">
+            <div class="projectHero">
                 <div class="projectHeroDevices">
-                    <div class="projectHeroDevice is-side">
-                        <div class="projectHeroPhone">
-                            <div class="projectHeroScreen">
-                                <img src="assets/dashboard.webp" alt="Finance dashboard screen" width="auto" height="auto"
-                                    loading="lazy" data-project-src="hero.images.0.src" data-project-alt="hero.images.0.alt">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectHeroDevice is-center">
-                        <div class="projectHeroPhone">
-                            <div class="projectHeroScreen">
-                                <img src="assets/flow.webp" alt="Finance flow screen" width="auto" height="auto" loading="lazy"
-                                    data-project-src="hero.images.1.src" data-project-alt="hero.images.1.alt">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectHeroDevice is-side">
-                        <div class="projectHeroPhone">
-                            <div class="projectHeroScreen">
-                                <img src="assets/accounts.webp" alt="Finance accounts screen" width="auto" height="auto"
-                                    loading="lazy" data-project-src="hero.images.2.src" data-project-alt="hero.images.2.alt">
-                            </div>
-                        </div>
-                    </div>
+                    <img class="projectHeroImageFull" src="assets/dashboard.webp" alt="Finance dashboard screen" width="auto" height="auto"
+                        loading="lazy" data-project-src="hero.images.0.src" data-project-alt="hero.images.0.alt">
+                    <img class="projectHeroImageFull" src="assets/flow.webp" alt="Finance flow screen" width="auto" height="auto" loading="lazy"
+                        data-project-src="hero.images.1.src" data-project-alt="hero.images.1.alt">
+                    <img class="projectHeroImageFull" src="assets/accounts.webp" alt="Finance accounts screen" width="auto" height="auto"
+                        loading="lazy" data-project-src="hero.images.2.src" data-project-alt="hero.images.2.alt">
                 </div>
-            </section>
+            </div>
 
-            <div class="projectIntroRow">
-                <div class="projectIntroFrame1">
-                    <div class="projectIntroLabels">
-                        <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
-                    </div>
-                    <div class="projectIntro">
+            <!-- Introduction -->
+            <div class="projectRow">
+                <div class="projectRow_label">
+                    <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
+                </div>
+                <div class="projectRow_content">
                 <p class="font16 projectIntroText" data-project-text="intro.text">
                     Product Designer · Full Stack Developer. A native iOS application designed to help freelancers and creatives
                     manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular
@@ -117,13 +99,15 @@
                         </div>
                     </dl>
                 </div>
-                    </div>
                 </div>
-                <div class="projectIntroFrame2">
-                    <div class="projectIntroLabels">
-                        <p class="font16 projectLabel" data-project-text="process.label">Process</p>
-                    </div>
-                    <div class="projectIntro">
+            </div>
+
+            <!-- Process -->
+            <div class="projectRow">
+                <div class="projectRow_label">
+                    <p class="font16 projectLabel" data-project-text="process.label">Process</p>
+                </div>
+                <div class="projectRow_content">
                         <p class="font16" data-project-text="process.steps.0">
                             The project began with research and discovery through interviews with freelancers and independent
                             workers, combined with an analysis of existing personal finance apps to identify usability gaps
@@ -139,46 +123,44 @@
                             data storage. Core user flows were tested directly on real devices throughout development to
                             ensure reliability and performance.
                         </p>
+                </div>
+            </div>
+
+            <div class="projectImageRow">
+                <div class="projectHeroDevice is-center projectHeroVideo">
+                    <div class="projectHeroVideoFrame">
+                        <video autoplay loop muted playsinline preload="auto">
+                            <source src="assets/demovideo.mp4" type="video/mp4"
+                                data-project-src="demoVideo.src" data-project-type="demoVideo.type">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Decisions & Outcome -->
+            <div class="projectRow">
+                <div class="projectRow_label">
+                    <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome</p>
+                </div>
+                <div class="projectRow_content">
+                    <p class="font16" data-project-text="designDecisions.steps.0">
+                        A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual
+                        summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve,
+                        and user flows were designed to require as little manual input as possible.
+                    </p>
+                    <p class="font16 projectBlockMeta_label" data-project-text="designDecisions.steps.1">
+                        The result was a polished and functional iOS application. Early feedback highlighted its clarity,
+                        ease of use, and the value of simplicity when working with personal finance tools.
+                    </p>
+                    <div class="projectPreviewActions">
+                        <a class="projectPreview projectPreview--doc" href="#" rel="noopener">Documentation<span class="projectPreview_dot projectPreview_dot--blink" aria-hidden="true"></span></a>
                     </div>
                 </div>
             </div>
 
             <div class="projectImageRow">
-                <div class="projectHeroDevice is-center">
-                    <div class="projectHeroPhone">
-                        <div class="projectHeroScreen">
-                            <video autoplay loop muted playsinline preload="auto">
-                                <source src="assets/demovideo.mp4" type="video/mp4"
-                                    data-project-src="demoVideo.src" data-project-type="demoVideo.type">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectContent">
-                <div class="projectContentFrame">
-                    <div class="projectIntroLabels">
-                        <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome</p>
-                    </div>
-                    <div class="projectIntro">
-                        <p class="font16" data-project-text="designDecisions.steps.0">
-                            A minimalist interface was prioritized to reduce financial anxiety and improve clarity. Visual
-                            summaries replaced dense tables, native iOS patterns were followed to shorten the learning curve,
-                            and user flows were designed to require as little manual input as possible.
-                        </p>
-                        <p class="font16 projectBlockMeta_label" data-project-text="designDecisions.steps.1">
-                            The result was a polished and functional iOS application. Early feedback highlighted its clarity,
-                            ease of use, and the value of simplicity when working with personal finance tools.
-                        </p>
-                        <div class="projectPreviewActions projectPreviewActions--doc">
-                            <a class="projectPreview projectPreview--live" href="#" rel="noopener" onclick="return false" style="opacity:0.5;pointer-events:none">Live Project — Coming Soon<span class="projectPreview_dot" aria-hidden="true"></span></a>
-                            <a class="projectPreview projectPreview--doc" href="#" rel="noopener">Documentation<span class="projectPreview_dot projectPreview_dot--blink" aria-hidden="true"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="projectContentImageFrame">
-                    <img src="assets/accounts2.png" alt="" width="auto" height="auto" loading="lazy">
+                <div class="projectHeroDevice is-center projectHeroPhoto">
+                    <img class="projectHeroImageFull" src="assets/accounts2.png" alt="" width="auto" height="auto" loading="lazy">
                 </div>
             </div>
 

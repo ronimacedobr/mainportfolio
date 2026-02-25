@@ -56,20 +56,19 @@
             </div>
 
             <!-- Hero -->
-            <section class="projectHero">
+            <div class="projectHero">
                 <div class="projectHeroDevices">
                     <img class="projectHeroImageFull" src="assets/code.webp" alt="Engineering process and development workflow" width="auto"
                         height="auto" loading="lazy" data-project-src="hero.images.0.src"
                         data-project-alt="hero.images.0.alt">
                 </div>
-            </section>
+            </div>
 
-            <div class="projectIntroRow">
-                <div class="projectIntroFrame1">
-                    <div class="projectIntroLabels">
+            <div class="projectRow">
+                <div class="projectRow_label">
                         <p class="font16 projectLabel" data-project-text="intro.label">Introduction</p>
-                    </div>
-                    <div class="projectIntro">
+                </div>
+                <div class="projectRow_content">
                         <p class="font16 projectIntroText" data-project-text="intro.text">
                             This page describes how I approach building digital products from design to production. I work
                             end-to-end, translating ideas into real, working code while keeping design intent intact throughout
@@ -96,14 +95,16 @@
                                 </div>
                             </dl>
                         </div>
-                    </div>
                 </div>
-                <div class="projectIntroFrame2">
-                    <div class="projectIntroLabels">
+            </div>
+
+            <!-- Process -->
+            <div class="projectRow">
+                <div class="projectRow_label">
                         <p class="font16 projectLabel" data-project-text="process.label">Process</p>
-                    </div>
-                    <div class="projectIntro">
-                        <p class="font16" data-project-text="process.steps.0">
+                </div>
+                <div class="projectRow_content">
+                    <p class="font16" data-project-text="process.steps.0">
                             AI-Assisted Development: I use Cursor with AI assistance as a support tool during development.
                             It helps me explore architectural options, validate trade-offs, refactor for clarity, and reason
                             through edge cases. AI is used to support decision-making, not to replace understanding or
@@ -119,7 +120,6 @@
                             approach. My focus is on readable, maintainable components that are easy to extend and understand
                             by others.
                         </p>
-                    </div>
                 </div>
             </div>
 
@@ -133,13 +133,13 @@
                 </div>
             </div>
 
-            <div class="projectContent">
-                <div class="projectContentFrame">
-                    <div class="projectIntroLabels">
+            <!-- Design Decisions & Outcome -->
+            <div class="projectRow">
+                <div class="projectRow_label">
                         <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome</p>
-                    </div>
-                    <div class="projectIntro">
-                        <p class="font16" data-project-text="designDecisions.steps.0">
+                </div>
+                <div class="projectRow_content">
+                    <p class="font16" data-project-text="designDecisions.steps.0">
                             Infrastructure &amp; Deployment: All projects follow real-world workflows. Source code is hosted
                             on GitHub with clear commit history. Web projects are deployed using Vercel for fast iteration
                             and previews. iOS projects are tested and distributed through TestFlight. When backend services
@@ -152,10 +152,12 @@
                             as an engineer while delivering solutions that are practical, maintainable, and aligned with
                             real production needs.
                         </p>
-                    </div>
                 </div>
-                <div class="projectContentImageFrame">
-                    <img src="assets/homehome.webp" alt="" width="auto" height="auto" loading="lazy">
+            </div>
+
+            <div class="projectImageRow">
+                <div class="projectHeroDevice is-center projectHeroPhoto">
+                    <img class="projectHeroImageFull" src="assets/homehome.webp" alt="" width="auto" height="auto" loading="lazy">
                 </div>
             </div>
 
