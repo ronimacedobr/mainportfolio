@@ -1,30 +1,47 @@
 {
   "projects": [
     {
-      "id": "mobile",
-      "title": "Mobile iOS",
+      "id": "dora",
+      "title": "Dora Legal SaaS",
       "intro": {
         "label": "Introduction",
-        "text": "Product Designer · Full Stack Developer. A native iOS application designed to help freelancers and creatives manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular income and complex financial tracking, yet most finance apps are designed for traditional employees. Existing solutions felt generic, overwhelming, and stressful to use."
-      },
-      "role": {
-        "label": "Role",
-        "text": "Product Designer · iOS Developer"
-      },
-      "usersNeeds": {
-        "label": "Users & Needs",
+        "text": "Dora is a Legal Practice Management SaaS designed and built end-to-end for the Brazilian legal market. The platform orchestrates clients, cases, finance, subscriptions, and AI-assisted workflows with a real-world focus on legal ops.",
         "meta": {
-          "year": "2025",
-          "industry": "Fintech",
+          "industry": "Legal Tech (B2B SaaS)",
           "scopeOfWork": "Product Design & Full-stack Architecture",
+          "year": "2025",
           "timeline": "2026"
         }
       },
       "process": {
         "label": "Process",
         "steps": [
+          "The project started with product definition and UX design in Figma, translating legal workflows into task-oriented interfaces that support daily professional use."
+        ]
+      }
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile iOS",
+      "intro": {
+        "label": "Introduction",
+        "text": "Product Designer · Full Stack Developer. A native iOS application designed to help freelancers and creatives manage income and expenses with clarity, speed, and minimal friction. Freelancers often face irregular income and complex financial tracking, yet most finance apps are designed for traditional employees. Existing solutions felt generic, overwhelming, and stressful to use.",
+        "meta": {
+          "industry": "Fintech",
+          "scopeOfWork": "Product Design & Full-stack Architecture",
+          "year": "2025",
+          "timeline": "2026"
+        }
+      },
+      "role": {
+        "label": "Role",
+        "text": "Product Designer · iOS Developer"
+      },
+      "process": {
+        "label": "Process",
+        "steps": [
           "The project began with research and discovery through interviews with freelancers and independent workers, combined with an analysis of existing personal finance apps to identify usability gaps and common pain points.",
-          "Based on these insights, wireframes were created with a strong focus on speed and simplicity. The interface was then developed into high-fidelity designs in Figma, aligned with Apple’s Human Interface Guidelines, and iterated continuously to remove unnecessary steps.",
+          "Based on these insights, wireframes were created with a strong focus on speed and simplicity. The interface was then developed into high-fidelity designs in Figma, aligned with Apple's Human Interface Guidelines, and iterated continuously to remove unnecessary steps.",
           "The application was built using Swift and SwiftUI, with Firebase integrated for authentication and data storage. Core user flows were tested directly on real devices throughout development to ensure reliability and performance."
         ]
       },
@@ -73,20 +90,17 @@
       "title": "Logistics Web",
       "intro": {
         "label": "Introduction",
-        "text": "Product Designer · Web Designer. A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale. Logistics platforms often struggle to communicate complex services in a simple and trustworthy way. Many existing industry websites feel outdated, overly technical, or visually cluttered, making it difficult for potential clients to quickly understand offerings and value.\n\nThe goal of this project was to design a clean, structured, and confident digital presence that communicates reliability, global reach, and operational efficiency, while remaining approachable for new and existing customers."
+        "text": "Product Designer · Web Designer. A modern marketing website designed for a logistics and freight company, focused on clarity, credibility, and operational scale. Logistics platforms often struggle to communicate complex services in a simple and trustworthy way. Many existing industry websites feel outdated, overly technical, or visually cluttered, making it difficult for potential clients to quickly understand offerings and value.\n\nThe goal of this project was to design a clean, structured, and confident digital presence that communicates reliability, global reach, and operational efficiency, while remaining approachable for new and existing customers.",
+        "meta": {
+          "industry": "Logistics & Freight",
+          "scopeOfWork": "Web Design, Client Portal",
+          "year": "2025",
+          "timeline": "2025"
+        }
       },
       "role": {
         "label": "Role",
         "text": "Product Designer · Web Designer"
-      },
-      "usersNeeds": {
-        "label": "Users & Needs",
-        "meta": {
-          "year": "2025",
-          "industry": "Logistics & Freight",
-          "scopeOfWork": "Web Design, Client Portal",
-          "timeline": "2025"
-        }
       },
       "process": {
         "label": "Process",
@@ -133,20 +147,17 @@
       "title": "Engineering Process",
       "intro": {
         "label": "Introduction",
-        "text": "This page describes how I approach building digital products from design to production. I work end-to-end, translating ideas into real, working code while keeping design intent intact throughout the process.\n\nI'm early in my engineering career, but I take full ownership of the projects I work on and continuously refine my approach through real implementation."
+        "text": "This page describes how I approach building digital products from design to production. I work end-to-end, translating ideas into real, working code while keeping design intent intact throughout the process.\n\nI'm early in my engineering career, but I take full ownership of the projects I work on and continuously refine my approach through real implementation.",
+        "meta": {
+          "industry": "Product Engineering",
+          "scopeOfWork": "Digital Product Designer & iOS Developer",
+          "year": "2025",
+          "timeline": "2026"
+        }
       },
       "role": {
         "label": "Role",
         "text": "Product Designer · iOS Developer · Frontend Engineer"
-      },
-      "usersNeeds": {
-        "label": "Users & Needs",
-        "meta": {
-          "year": "2025",
-          "industry": "Product Engineering",
-          "scopeOfWork": "Digital Product Designer & iOS Developer",
-          "timeline": "2026"
-        }
       },
       "process": {
         "label": "Process",

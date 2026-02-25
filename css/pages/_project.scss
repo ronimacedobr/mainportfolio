@@ -51,12 +51,14 @@ $project-media-max: 1200px;
 
 .projectBlockMeta {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .projectBlockMeta_item {
-    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .projectBlockMeta_label {
@@ -73,7 +75,6 @@ $project-media-max: 1200px;
 .projectRow {
     display: flex;
     gap: $gap;
-    border-top: 1px solid rgba(198, 198, 198, 0.5);
     padding-top: 4vw;
     /* no padding-bottom — parent gap handles spacing */
 }
