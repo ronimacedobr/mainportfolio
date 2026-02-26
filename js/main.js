@@ -119,8 +119,11 @@ function setupAnimations() {
         });
     });
 
-    const cameFromProject = isProjectPage && /project-/.test(document.referrer || "");
-    const shouldShowLoader = !cameFromProject;
+    const referrer = document.referrer || "";
+    const sameOrigin = referrer && new URL(referrer).origin === window.location.origin;
+    const shouldShowLoader = !sameOrigin && !sessionStorage.getItem("visited");
+
+    sessionStorage.setItem("visited", "1");
 
     if (shouldShowLoader) {
         let counter = { value: 0 };

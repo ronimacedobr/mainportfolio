@@ -976,6 +976,89 @@ footer {
   border-radius: 100px;
   white-space: nowrap;
   opacity: 0.7;
+  transition: opacity 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  cursor: default;
+}
+.projectToolStack_pill:hover {
+  opacity: 1;
+}
+.projectToolStack_pill {
+  /* Brand colours on hover */
+}
+.projectToolStack_pill[data-tool=Figma]:hover {
+  background: #a259ff;
+  border-color: #a259ff;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=Swift]:hover {
+  background: #f05138;
+  border-color: #f05138;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=SwiftUI]:hover {
+  background: #006eff;
+  border-color: #006eff;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=Xcode]:hover {
+  background: #1575f9;
+  border-color: #1575f9;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=React]:hover {
+  background: #61dafb;
+  border-color: #61dafb;
+  color: #000;
+}
+.projectToolStack_pill[data-tool="Next.js"]:hover {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=TypeScript]:hover {
+  background: #3178c6;
+  border-color: #3178c6;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool="Tailwind CSS"]:hover {
+  background: #38bdf8;
+  border-color: #38bdf8;
+  color: #000;
+}
+.projectToolStack_pill[data-tool=Supabase]:hover {
+  background: #3ecf8e;
+  border-color: #3ecf8e;
+  color: #000;
+}
+.projectToolStack_pill[data-tool=Firebase]:hover {
+  background: #ffca28;
+  border-color: #ffca28;
+  color: #000;
+}
+.projectToolStack_pill[data-tool=Stripe]:hover {
+  background: #635bff;
+  border-color: #635bff;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=Vercel]:hover {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool=GitHub]:hover {
+  background: #24292e;
+  border-color: #24292e;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool="VS Code"]:hover {
+  background: #007acc;
+  border-color: #007acc;
+  color: #fff;
+}
+.projectToolStack_pill[data-tool="Claude Code"]:hover {
+  background: #d97757;
+  border-color: #d97757;
+  color: #fff;
 }
 
 /* ───── Section Rows (label left / content right) ───── */
