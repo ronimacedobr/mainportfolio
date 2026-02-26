@@ -8,7 +8,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
-    <title>Engineering Process — Roni Macedo</title>
+    <title>How I Build — Roni Macedo</title>
     <meta name="description" content="How I build digital products from design to production. My development process, tools, and deployment workflow.">
     <!-- CSS -->
     <!-- Loco -->
@@ -50,7 +50,7 @@
             <div class="projectTitle">
                 <div class="projectHeader_inner">
                     <div class="reveal">
-                        <h1 class="fontLarge" data-project-text="title">Engineering Process</h1>
+                        <h1 class="fontLarge" data-project-text="title">How I Build</h1>
                     </div>
                 </div>
             </div>
@@ -71,22 +71,24 @@
                 </div>
                 <div class="projectRow_content">
                         <p class="font16 projectIntroText" data-project-text="intro.text">
-                            This page describes how I approach building digital products from design to production. I work
-                            end-to-end, translating ideas into real, working code while keeping design intent intact throughout
-                            the process. I&rsquo;m early in my engineering career, but I take full ownership of the projects I
-                            work on and continuously refine my approach through real implementation.
+                            I own the full product lifecycle &mdash; from interface design to database architecture to deployment pipelines. Every product I ship goes through the same loop: define the problem, design the solution, write the code, deploy it, and iterate based on real usage. No handoffs. One stack, one owner.
                         </p>
                         <div class="projectBlock">
                             <div class="projectToolStack">
-                                <span class="projectToolStack_pill font16">Figma</span>
-                                <span class="projectToolStack_pill font16">VS Code</span>
-                                <span class="projectToolStack_pill font16">Swift</span>
-                                <span class="projectToolStack_pill font16">SwiftUI</span>
-                                <span class="projectToolStack_pill font16">React</span>
-                                <span class="projectToolStack_pill font16">Next.js</span>
-                                <span class="projectToolStack_pill font16">Supabase</span>
-                                <span class="projectToolStack_pill font16">Vercel</span>
-                                <span class="projectToolStack_pill font16">GitHub</span>
+                                <span class="projectToolStack_pill font16" data-tool="Figma">Figma</span>
+                                <span class="projectToolStack_pill font16" data-tool="Swift">Swift</span>
+                                <span class="projectToolStack_pill font16" data-tool="SwiftUI">SwiftUI</span>
+                                <span class="projectToolStack_pill font16" data-tool="Xcode">Xcode</span>
+                                <span class="projectToolStack_pill font16" data-tool="React">React</span>
+                                <span class="projectToolStack_pill font16" data-tool="Next.js">Next.js</span>
+                                <span class="projectToolStack_pill font16" data-tool="TypeScript">TypeScript</span>
+                                <span class="projectToolStack_pill font16" data-tool="Tailwind CSS">Tailwind CSS</span>
+                                <span class="projectToolStack_pill font16" data-tool="Supabase">Supabase</span>
+                                <span class="projectToolStack_pill font16" data-tool="Firebase">Firebase</span>
+                                <span class="projectToolStack_pill font16" data-tool="Stripe">Stripe</span>
+                                <span class="projectToolStack_pill font16" data-tool="Vercel">Vercel</span>
+                                <span class="projectToolStack_pill font16" data-tool="GitHub">GitHub</span>
+                                <span class="projectToolStack_pill font16" data-tool="VS Code">VS Code</span>
                             </div>
                         </div>
                 </div>
@@ -95,24 +97,20 @@
                 <!-- Process -->
             <div class="projectRow">
                 <div class="projectRow_label">
-                        <p class="font16 projectLabel" data-project-text="process.label">Process</p>
+                        <p class="font16 projectLabel" data-project-text="process.label">How I Work</p>
                 </div>
                 <div class="projectRow_content">
                     <p class="font16" data-project-text="process.steps.0">
-                            AI-Assisted Development: I use VS Code with AI assistance as a support tool during development.
-                            It helps me explore architectural options, validate trade-offs, refactor for clarity, and reason
-                            through edge cases. AI is used to support decision-making, not to replace understanding or
-                            ownership of the code.
+                            Design starts with structure, not aesthetics. I map out data models, user flows, and edge cases before opening Figma &mdash; the same approach whether it&rsquo;s a finance dashboard or a legal case tracker. Components are built as a system, not individual screens, so the design scales with the product. When I move to code, the component library mirrors the design tokens 1:1.
                         </p>
                         <p class="font16 projectBlockMeta_label" data-project-text="process.steps.1">
-                            Implementation &ndash; iOS: For iOS projects, I work with Swift and SwiftUI, focusing on
-                            state-driven interfaces, reusable views, and native performance. I aim for clean separation
-                            between UI, logic, and data, refining structure as the project grows.
+                            Native iOS work is done in Swift and SwiftUI. I use MVVM with clear boundaries between views, state management, and data layers. Builds go through TestFlight for real-device validation &mdash; I don&rsquo;t ship anything that only ran in a simulator.
                         </p>
                         <p class="font16 projectBlockMeta_label" data-project-text="process.steps.2">
-                            Implementation &ndash; Web: For web projects, I work primarily with React and a component-based
-                            approach. My focus is on readable, maintainable components that are easy to extend and understand
-                            by others.
+                            Web products are built with React and Next.js on TypeScript, styled with Tailwind CSS. I architect for maintainability &mdash; small composable components, server-side rendering where it matters, and a clean separation between UI logic and API calls. Backend services run on Supabase or Firebase with PostgreSQL, row-level security, and auth handled at the middleware layer.
+                        </p>
+                        <p class="font16 projectBlockMeta_label" data-project-text="process.steps.3">
+                            AI is embedded in how I build &mdash; not bolted on. I use Claude and LLM APIs during architecture decisions, code generation, and debugging. Prompts are part of the workflow the same way tests are: structured, versioned, and intentional. The goal isn&rsquo;t to write less code &mdash; it&rsquo;s to ship better products faster.
                         </p>
                 </div>
             </div>
@@ -131,21 +129,14 @@
             <!-- Design Decisions & Outcome -->
             <div class="projectRow">
                 <div class="projectRow_label">
-                        <p class="font16 projectLabel" data-project-text="designDecisions.label">Design Decisions &amp; Outcome</p>
+                        <p class="font16 projectLabel" data-project-text="designDecisions.label">Infrastructure</p>
                 </div>
                 <div class="projectRow_content">
                     <p class="font16" data-project-text="designDecisions.steps.0">
-                            Infrastructure &amp; Deployment: All projects follow real-world workflows. Source code is hosted
-                            on GitHub with clear commit history. Web projects are deployed using Vercel for fast iteration
-                            and previews. iOS projects are tested and distributed through TestFlight. When backend services
-                            are required, I integrate tools such as Supabase or Firebase for authentication and data
-                            storage.
+                            All source code lives on GitHub with atomic commits and clear PR history. Web projects deploy through Vercel &mdash; preview environments on every push, production on merge to main. iOS builds are distributed via TestFlight. When a project requires payments, I integrate Stripe end-to-end: products, subscriptions, webhooks, and entitlements.
                         </p>
                         <p class="font16 projectBlockMeta_label" data-project-text="designDecisions.steps.1">
-                            Outcome: By working across design, code, and deployment, I reduce handoff friction and gain a
-                            deeper understanding of how products behave in real environments. This approach helps me grow
-                            as an engineer while delivering solutions that are practical, maintainable, and aligned with
-                            real production needs.
+                            Owning design, frontend, backend, and infrastructure removes the gap between intent and execution. What gets designed is what gets built. What gets built is what gets deployed. There&rsquo;s no translation layer where fidelity gets lost.
                         </p>
                 </div>
             </div>
@@ -159,11 +150,11 @@
             <div class="projectNav" data-textcolor="#e9e9e9" data-bgcolor="#181818">
                 <a class="projectNav_link" href="project-web.html" data-project-href="nav.previous.href">
                     <span class="font16 projectNav_label" data-project-text="nav.previous.label">Previous project</span>
-                    <span class="fontMedium projectNav_title" data-project-text="nav.previous.title">Web Design</span>
+                    <span class="fontMedium projectNav_title" data-project-text="nav.previous.title">Novaa — Website</span>
                 </a>
                 <a class="projectNav_link is-right" href="project-mobile.html" data-project-href="nav.next.href">
                     <span class="font16 projectNav_label" data-project-text="nav.next.label">Next project</span>
-                    <span class="fontMedium projectNav_title" data-project-text="nav.next.title">Mobile iOS</span>
+                    <span class="fontMedium projectNav_title" data-project-text="nav.next.title">Sofi Finance — iOS App</span>
                 </a>
             </div>
         </section>

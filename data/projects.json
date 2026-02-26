@@ -75,12 +75,12 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Engineering Process",
+          "title": "How I Build",
           "href": "project-wine-donuts.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Legal Saas",
+          "title": "Dora — Legal SaaS",
           "href": "project-dora.html"
         }
       }
@@ -132,22 +132,22 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Legal Saas",
+          "title": "Dora — Legal SaaS",
           "href": "project-dora.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Engineering Process",
+          "title": "How I Build",
           "href": "project-wine-donuts.html"
         }
       }
     },
     {
       "id": "wine-donuts",
-      "title": "Engineering Process",
+      "title": "How I Build",
       "intro": {
         "label": "Introduction",
-        "text": "This page describes how I approach building digital products from design to production. I work end-to-end, translating ideas into real, working code while keeping design intent intact throughout the process.\n\nI'm early in my engineering career, but I take full ownership of the projects I work on and continuously refine my approach through real implementation.",
+        "text": "I own the full product lifecycle — from interface design to database architecture to deployment pipelines. Every product I ship goes through the same loop: define the problem, design the solution, write the code, deploy it, and iterate based on real usage. No handoffs. One stack, one owner.",
         "meta": {
           "industry": "Product Engineering",
           "scopeOfWork": "Digital Product Designer & iOS Developer",
@@ -160,18 +160,19 @@
         "text": "Product Designer · iOS Developer · Frontend Engineer"
       },
       "process": {
-        "label": "Process",
+        "label": "How I Work",
         "steps": [
-          "AI-Assisted Development: I use VS Code with AI assistance as a support tool during development. It helps me explore architectural options, validate trade-offs, refactor for clarity, and reason through edge cases. AI is used to support decision-making, not to replace understanding or ownership of the code.",
-          "Implementation – iOS: For iOS projects, I work with Swift and SwiftUI, focusing on state-driven interfaces, reusable views, and native performance. I aim for clean separation between UI, logic, and data, refining structure as the project grows.",
-          "Implementation – Web: For web projects, I work primarily with React and a component-based approach. My focus is on readable, maintainable components that are easy to extend and understand by others."
+          "Design starts with structure, not aesthetics. I map out data models, user flows, and edge cases before opening Figma — the same approach whether it's a finance dashboard or a legal case tracker. Components are built as a system, not individual screens, so the design scales with the product. When I move to code, the component library mirrors the design tokens 1:1.",
+          "Native iOS work is done in Swift and SwiftUI. I use MVVM with clear boundaries between views, state management, and data layers. Builds go through TestFlight for real-device validation — I don't ship anything that only ran in a simulator.",
+          "Web products are built with React and Next.js on TypeScript, styled with Tailwind CSS. I architect for maintainability — small composable components, server-side rendering where it matters, and a clean separation between UI logic and API calls. Backend services run on Supabase or Firebase with PostgreSQL, row-level security, and auth handled at the middleware layer.",
+          "AI is embedded in how I build — not bolted on. I use Claude and LLM APIs during architecture decisions, code generation, and debugging. Prompts are part of the workflow the same way tests are: structured, versioned, and intentional. The goal isn't to write less code — it's to ship better products faster."
         ]
       },
       "designDecisions": {
-        "label": "Design Decisions & Outcome",
+        "label": "Infrastructure",
         "steps": [
-          "Infrastructure & Deployment: All projects follow real-world workflows. Source code is hosted on GitHub with clear commit history. Web projects are deployed using Vercel for fast iteration and previews. iOS projects are tested and distributed through TestFlight. When backend services are required, I integrate tools such as Supabase or Firebase for authentication and data storage.",
-          "Outcome: By working across design, code, and deployment, I reduce handoff friction and gain a deeper understanding of how products behave in real environments. This approach helps me grow as an engineer while delivering solutions that are practical, maintainable, and aligned with real production needs."
+          "All source code lives on GitHub with atomic commits and clear PR history. Web projects deploy through Vercel — preview environments on every push, production on merge to main. iOS builds are distributed via TestFlight. When a project requires payments, I integrate Stripe end-to-end: products, subscriptions, webhooks, and entitlements.",
+          "Owning design, frontend, backend, and infrastructure removes the gap between intent and execution. What gets designed is what gets built. What gets built is what gets deployed. There's no translation layer where fidelity gets lost."
         ]
       },
       "hero": {
@@ -189,12 +190,12 @@
       "nav": {
         "previous": {
           "label": "Previous project",
-          "title": "Web Design",
+          "title": "Novaa — Website",
           "href": "project-web.html"
         },
         "next": {
           "label": "Next project",
-          "title": "Mobile iOS",
+          "title": "Sofi Finance — iOS App",
           "href": "project-mobile.html"
         }
       }
